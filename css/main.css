@@ -13,6 +13,10 @@ html {
     font-family: Montserrat;
 }
 
+/* 
+Следующие 3 блока отвечают за фоновое видео
+*/
+
 #video {
     position: absolute;
     top: 0;
@@ -34,14 +38,57 @@ html {
     left:0;
     width: 100%;
     height: 100%;
-    z-index: 4;
-    
+    z-index: 2;
     background: rgba(0,0,0,0.7);
 }
 
-
 header{
-    background-image: url(../img/image.png);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: transparent;
+    z-index: 10;
+}
+
+.btn {
+    text-decoration: none;   
+}
+
+.nav-btns ul{
+    list-style: none;
+}
+
+.container{
+    width: 1400px;
+}
+
+.nav-logo a img{
+    height: 2rem;
+}
+
+.achiev{
+    padding: 1rem;
+    width: 200px;
+    border-left: 3px solid #f14d34;
+}
+
+.achiev-upper {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#achiev-1 .achiev-upper{
+    font-size: 48px;
+}
+
+.achiev-bot {
+    font-weight: lighter;
+    font-size: 12px;
+
 }
 
 /*задание фона, отступы*/
@@ -49,7 +96,6 @@ header .top{
     padding: 50px 100px; /*увеличили размер, отступы сверху и снизу, слева и справа*/
     box-sizing: border-box;/*ширина блока вместе с пэддингами*/
     background-color: black;
-    background-image: url(druplicon.svg), url(image.png);
     padding-bottom: 200px;/*отступ снизу*/
     background-size: contain;
 }
@@ -58,28 +104,7 @@ header .bottom{
   padding: 200px;
 }
 
-header h1{
-    text-align: center;
-    color:white;
-    font-weight: 900;
-    font-family: Montserrat-Bold;
-}
-
-header h4{
-    text-align: center;
-    font-size: 1vw;
-    color:rgba(255, 255, 255, 0.749);
-    font-weight: 400;
-}
-
-
-.button-tarif a{
-    color: #fff;
-    text-decoration: none;
-}
-
-header .button-tarif{
-    color:white;
+.button-tarif{
     text-align: center;
     font-weight: 500;
     font-size: 12px;
@@ -174,4 +199,44 @@ header .button-tarif{
 .graphic img{
     width: 80%;
     padding-top: 450px;
+}
+
+/*
+    Дальше я сделал общие классы, которые применимы ко всем блокам.
+
+    Можно добавлять новые по необходимости,
+            ! Но не изменять их !
+
+    Желательно делать их максимально простыми, чтобы был понятен функционал.
+*/
+
+.color-white {
+    color: white;
+}
+
+.flex {
+    display: flex;
+}
+
+.mx-2 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.my-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.fs-12 {
+    font-size: 12px;
 }
