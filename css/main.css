@@ -121,12 +121,16 @@ header .bottom{
 
 .years13{
     padding-top: 110px;
+    padding-left: 1px;
+    /* width: 100vw; */
+    box-sizing: border-box;
+    outline: 1px solid red;
 }
 .years13 h2{
     background-color: white;
     color:black;
-    font-size: 50px;;
-    margin-bottom: 45px;
+    font-size: 28px;;
+    margin-bottom: 25px;
     font-family: Montserrat-Bold; 
 
 
@@ -134,20 +138,27 @@ header .bottom{
 
 .years13 .figures{
     display:flex;
+    justify-content: flex-start;
+    margin-top: 60px;
     flex-wrap: wrap; /* разрешить переход на новую строку */
 }
 
 .years13 figure{
-    background-image: url(Vector.png);
-    background-position: 10% 20%;
+    background-image: url(../img/Vector.png);
+    background-position: 10% 8%;
     background-repeat: no-repeat;
-    width: 40%;
+    width: 20%;
     text-align: center;
+    margin: 0;
+    margin-right: 5%;
+    outline: 1px solid green;
 }
 
 .years13 figcaption{
     text-align: left;
+    font-size: 18px;
     padding-left: 12px;
+    width: 100%;
 }
 
 .years13 figure img{
@@ -158,7 +169,7 @@ header .bottom{
 .years13 h3{
     background-color: white;
     color: #4f5a73;
-    font-size:30px;
+    font-size:18px;
     font-family: Montserrat; 
 
 }
@@ -239,4 +250,35 @@ header .bottom{
 
 .fs-12 {
     font-size: 12px;
+}
+
+
+
+
+@media (max-width:500px){
+    .years13 .figures{
+        /* width: fit-content; */
+        margin: auto;
+        margin-top: 60px;
+    }
+
+    .years13 h2, .years13 h3{
+        /* width: fit-content; */
+        /* margin: auto; */
+        margin-bottom: 20px;
+    }
+
+    .years13 figure{
+        width: 35%;
+        margin-right: 1%;
+    }
+
+    .years13{
+        width: 70vw;
+    }
+
+    .years13 h3{
+        outline: 1px solid blue;
+        font-size: 13px;
+    }
 }
