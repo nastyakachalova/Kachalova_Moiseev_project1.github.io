@@ -12,7 +12,9 @@ font-family: Montserrat-Bold;
 html {
     font-family: Montserrat;
 }
-
+:root{
+    --font-block:18px;
+}
 /* 
 Следующие 3 блока отвечают за фоновое видео
 */
@@ -121,10 +123,12 @@ header .bottom{
 
 .years13{
     padding-top: 110px;
-    padding-left: 1px;
+    padding-left: 50px;
     /* width: 100vw; */
     box-sizing: border-box;
     outline: 1px solid red;
+    padding-right: 50px;
+
 }
 .years13 h2{
     background-color: white;
@@ -151,7 +155,7 @@ header .bottom{
     text-align: center;
     margin: 0;
     margin-right: 5%;
-    outline: 1px solid green;
+    /* outline: 1px solid green; */
 }
 
 .years13 figcaption{
@@ -177,14 +181,15 @@ header .bottom{
 .expertise h2{
     font-family: Montserrat-Bold; 
     color: white;
+    font-size:3vw;
 }
 
 .expertise h3{
     font-family: Montserrat; 
     color: #FFFFFFB3;
-    font-size: 30px;
+    font-size: 18px;
     line-height: 200%;/*межстрочное расстояние*/
-    border-left: 6px solid #f14d34;
+    border-left: 3px solid #f14d34;
     padding-left: 30px;
     margin-left: 40px;
 }
@@ -252,19 +257,44 @@ header .bottom{
     font-size: 12px;
 }
 
+.blocks{
+    display: flex;
+    align-items: flex-start;/* выравнивание флексов по вертикали */
+    width: 50%;
+    /* border: 1px solid white; */
+    flex-wrap: wrap;/* разрешили перенос флексов на новую строку */
+    margin-left: 40%;
+    
+}
 
+.blocks h3{
+    width: 40%;
+    margin: 0;
+    margin-top: 30px;
+    margin-right: 10px;
+    line-height: 120%;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.blocks a{
+    color:  #f14d34;
+    text-decoration: none;/* убрать подчёркивание, как у ссылки */
+}
+
+.blocks a:hover{
+    text-decoration: underline;/* подчёркивание при наведении */
+}
 
 
 @media (max-width:500px){
     .years13 .figures{
-        /* width: fit-content; */
         margin: auto;
         margin-top: 60px;
     }
 
     .years13 h2, .years13 h3{
-        /* width: fit-content; */
-        /* margin: auto; */
         margin-bottom: 20px;
     }
 
@@ -278,7 +308,8 @@ header .bottom{
     }
 
     .years13 h3{
-        outline: 1px solid blue;
+        /* outline: 1px solid blue; */
         font-size: 13px;
     }
 }
+
