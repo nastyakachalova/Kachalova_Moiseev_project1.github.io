@@ -306,6 +306,8 @@ header .bottom{
     .years13{
         width: 100vw;
         margin:auto;
+        padding-left:10px;
+        padding-right:10px;
     }
 
     .years13 h3{
