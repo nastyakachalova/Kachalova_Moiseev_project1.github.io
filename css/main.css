@@ -13,7 +13,7 @@ html {
     font-family: Montserrat;
 }
 :root{
-    --font-block:18px;
+    --font-block:14px;
 }
 /* 
 Следующие 3 блока отвечают за фоновое видео
@@ -182,39 +182,50 @@ header .bottom{
     font-family: Montserrat-Bold; 
     color: white;
     font-size:3vw;
+    margin-left: 50%;
+    margin-bottom: 30px;
 }
 
 .expertise h3{
     font-family: Montserrat; 
     color: #FFFFFFB3;
-    font-size: 18px;
+    font-size: var(--font-block);
     line-height: 200%;/*межстрочное расстояние*/
     border-left: 3px solid #f14d34;
-    padding-left: 30px;
+    padding-left: 15px;
     margin-left: 40px;
 }
 
 .expertise{
     /*background-color: black ;*/
-    padding-top: 600px;
+    padding-top: 300px;
     background: linear-gradient(254.72deg,rgba(255,255,255,.276) -114.85%,rgba(255,255,255,0) 69.04%),#040613;
-    /*padding-bottom: 100px;*/
+    /* padding-bottom: 80px; */
+    /* height: 839px; */
+    box-sizing: border-box;/* позволяет включить padding в height */
 }
 
+
 .graphic{
-    background-color: #040613;
-    background: url(druplicon.svg);
-    background-size: 100% 100%;
-    height: 800px;
+    /* background-color: #040613; */
+    background: url(../img/laptop.png);
+    background-size: contain;
+    height: 320px; 
     background-repeat: no-repeat;
-    background-position:right 100px;
+    /* background-position:right 100px; */
     padding-top: 50px;
-    background-clip: content-box;
+    /* background-clip: content-box; */
+    width: 45%;
+    margin-top: -350px;
+    outline: 1px solid pink;
 }
 
 .graphic img{
-    width: 80%;
-    padding-top: 450px;
+    width: 100%;
+    /* padding-top: 450px; */
+    height: 100%;
+    object-fit: contain;
+
 }
 
 /*
@@ -260,16 +271,17 @@ header .bottom{
 .blocks{
     display: flex;
     align-items: flex-start;/* выравнивание флексов по вертикали */
-    width: 50%;
+    width: 42%;
     /* border: 1px solid white; */
     flex-wrap: wrap;/* разрешили перенос флексов на новую строку */
-    margin-left: 40%;
+    margin-left: 50%;
     
 }
 
 .blocks h3{
     width: 40%;
     margin: 0;
+    font-size: var(--font-block);
     margin-top: 30px;
     margin-right: 10px;
     line-height: 120%;
