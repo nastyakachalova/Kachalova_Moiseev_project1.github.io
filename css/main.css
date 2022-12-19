@@ -20,15 +20,16 @@ html {
 #video {
     position: absolute;
     top: 0;
+    right: 0;
     left: 0;
-    width: 100%;
-}
+    width: auto;
+    min-width: 100%;
+    min-height: 100%;}
 
 .video-bg {
     overflow: hidden;
     z-index: 0;
     position: relative;
-    width: 100%;
     padding-top:30%;
 }
 
@@ -70,25 +71,42 @@ header{
     height: 2rem;
 }
 
-.achiev{
+.spec{
     padding: 1rem;
     width: 200px;
     border-left: 3px solid #f14d34;
 }
 
-.achiev-upper {
+.spec-upper {
     font-weight: bold;
     font-size: 22px;
 }
 
-#achiev-1 .achiev-upper{
+#spec-1 .spec-upper{
     font-size: 48px;
 }
 
-.achiev-bot {
+.spec-bot {
     font-weight: lighter;
     font-size: 12px;
 
+}
+
+.img-pc {
+    width: 40%;
+}
+
+#img-pc {
+    margin-top: 10rem;
+    width: 100%;
+}
+
+.exp-header {
+    font-weight: bold;
+}
+
+.expertise {
+    margin: auto;
 }
 
 /*задание фона, отступы*/
@@ -117,6 +135,12 @@ header .bottom{
     margin: 70px auto;/*отступ сверху и снизу, вырвнивание по середине */
 
 }
+
+
+#block3{
+    background: linear-gradient(254.72deg,rgba(255,255,255,.276) -114.85%,rgba(255,255,255,0) 69.04%),#040613;
+}
+
 
 
 .years13{
@@ -163,28 +187,6 @@ header .bottom{
 
 }
 
-.expertise h2{
-    font-family: Montserrat-Bold; 
-    color: white;
-}
-
-.expertise h3{
-    font-family: Montserrat; 
-    color: #FFFFFFB3;
-    font-size: 30px;
-    line-height: 200%;/*межстрочное расстояние*/
-    border-left: 6px solid #f14d34;
-    padding-left: 30px;
-    margin-left: 40px;
-}
-
-.expertise{
-    /*background-color: black ;*/
-    padding-top: 600px;
-    background: linear-gradient(254.72deg,rgba(255,255,255,.276) -114.85%,rgba(255,255,255,0) 69.04%),#040613;
-    /*padding-bottom: 100px;*/
-}
-
 .graphic{
     background-color: #040613;
     background: url(druplicon.svg);
@@ -216,6 +218,16 @@ header .bottom{
 
 .flex {
     display: flex;
+}
+
+.text-bold {
+    font-weight: 1000;
+}
+
+@media (min-width: 1200px){
+.desktop-flex {
+        display: flex;
+    }
 }
 
 .mx-2 {
