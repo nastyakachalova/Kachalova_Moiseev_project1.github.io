@@ -22,15 +22,16 @@ html {
 #video {
     position: absolute;
     top: 0;
+    right: 0;
     left: 0;
-    width: 100%;
-}
+    width: auto;
+    min-width: 100%;
+    min-height: 100%;}
 
 .video-bg {
     overflow: hidden;
     z-index: 0;
     position: relative;
-    width: 100%;
     padding-top:30%;
 }
 
@@ -72,25 +73,42 @@ header{
     height: 2rem;
 }
 
-.achiev{
+.spec{
     padding: 1rem;
     width: 200px;
     border-left: 3px solid #f14d34;
 }
 
-.achiev-upper {
+.spec-upper {
     font-weight: bold;
     font-size: 22px;
 }
 
-#achiev-1 .achiev-upper{
+#spec-1 .spec-upper{
     font-size: 48px;
 }
 
-.achiev-bot {
+.spec-bot {
     font-weight: lighter;
     font-size: 12px;
 
+}
+
+.img-pc {
+    width: 40%;
+}
+
+#img-pc {
+    margin-top: 10rem;
+    width: 100%;
+}
+
+.exp-header {
+    font-weight: bold;
+}
+
+.expertise {
+    margin: auto;
 }
 
 /*задание фона, отступы*/
@@ -119,6 +137,12 @@ header .bottom{
     margin: 70px auto;/*отступ сверху и снизу, вырвнивание по середине */
 
 }
+
+
+#block3{
+    background: linear-gradient(254.72deg,rgba(255,255,255,.276) -114.85%,rgba(255,255,255,0) 69.04%),#040613;
+}
+
 
 
 .years13{
@@ -196,6 +220,7 @@ header .bottom{
     margin-left: 40px;
 }
 
+<<<<<<< HEAD
 .expertise{
     /*background-color: black ;*/
     padding-top: 300px;
@@ -206,10 +231,14 @@ header .bottom{
     background-image: url(img/);
     padding-bottom: 0px;
 }
+=======
+
+>>>>>>> 0f09cd851872619fdb29cc3d88c3136baec459a3
 
 
 .graphic{
     /* background-color: #040613; */
+<<<<<<< HEAD
     /* background: url(../img/laptop.png); */
     /* background-size: contain; */
     /* height: 320px;  */
@@ -221,6 +250,63 @@ header .bottom{
     margin-top: -370px;
     /* outline: 1px solid pink; */
     /* object-fit: cover; */
+}
+
+=======
+    background: url(../img/laptop.png);
+    background-size: contain;
+    height: 320px; 
+    background-repeat: no-repeat;
+    /* background-position:right 100px; */
+    padding-top: 50px;
+    /* background-clip: content-box; */
+    width: 45%;
+    margin-top: -350px;
+    outline: 1px solid pink;
+}
+
+.graphic img{
+    width: 100%;
+    /* padding-top: 450px; */
+    height: 100%;
+    object-fit: contain;
+
+}
+>>>>>>> 0f09cd851872619fdb29cc3d88c3136baec459a3
+
+
+.blocks a:hover{
+    text-decoration: underline;/* подчёркивание при наведении */
+}
+
+
+@media (max-width:500px){
+    .years13 .figures{
+        margin: auto;
+        margin-top: 60px;
+    }
+
+    .years13 h2, .years13 h3{
+        margin-bottom: 20px;
+    }
+
+    .years13 figure{
+        width: 35%;
+        margin-right: 13%;
+        background-size: 50%;
+    }
+
+    .years13{
+        width: 100vw;
+        margin: auto;
+        padding-left:15px;
+        padding-right:10px;
+    }
+
+    .years13 h3{
+        /* outline: 1px solid blue; */
+        font-size: 13px;
+    }
 }
 
 
@@ -239,6 +325,16 @@ header .bottom{
 
 .flex {
     display: flex;
+}
+
+.text-bold {
+    font-weight: 1000;
+}
+
+@media (min-width: 1200px){
+.desktop-flex {
+        display: flex;
+    }
 }
 
 .mx-2 {
@@ -277,6 +373,7 @@ header .bottom{
 .blocks h3{
     width: 40%;
     margin: 0;
+    font-size: var(--font-block);
     margin-top: 30px;
     margin-right: 10px;
     line-height: 120%;
@@ -285,8 +382,9 @@ header .bottom{
     padding-bottom: 10px;
 }
 
-.blocks a{
+.orange-text{
     color:  #f14d34;
+<<<<<<< HEAD
     text-decoration: none;/* убрать подчёркивание, как у ссылки */
 }
 
@@ -408,5 +506,7 @@ header .bottom{
         margin-top: -10px;
     }
 
+=======
+>>>>>>> 0f09cd851872619fdb29cc3d88c3136baec459a3
 }
 
