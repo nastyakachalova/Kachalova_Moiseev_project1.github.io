@@ -13,7 +13,7 @@ html {
     font-family: Montserrat;
 }
 :root{
-    --font-block:18px;
+    --font-block:14px;
 }
 /* 
 Следующие 3 блока отвечают за фоновое видео
@@ -123,7 +123,7 @@ header .bottom{
 
 .years13{
     padding-top: 110px;
-    padding-left: 50px;
+    padding-left: 120px;
     /* width: 100vw; */
     box-sizing: border-box;
     outline: 1px solid red;
@@ -182,40 +182,47 @@ header .bottom{
     font-family: Montserrat-Bold; 
     color: white;
     font-size:3vw;
+    margin-left: 50%;
+    margin-bottom: 30px;
 }
 
 .expertise h3{
     font-family: Montserrat; 
     color: #FFFFFFB3;
-    font-size: 18px;
+    font-size: var(--font-block);
     line-height: 200%;/*межстрочное расстояние*/
     border-left: 3px solid #f14d34;
-    padding-left: 30px;
+    padding-left: 15px;
     margin-left: 40px;
 }
 
 .expertise{
     /*background-color: black ;*/
-    padding-top: 600px;
+    padding-top: 300px;
     background: linear-gradient(254.72deg,rgba(255,255,255,.276) -114.85%,rgba(255,255,255,0) 69.04%),#040613;
-    /*padding-bottom: 100px;*/
+    /* padding-bottom: 80px; */
+    /* height: 839px; */
+    box-sizing: border-box;/* позволяет включить padding в height */
+    background-image: url(img/);
+    padding-bottom: 0px;
 }
+
 
 .graphic{
-    background-color: #040613;
-    background: url(druplicon.svg);
-    background-size: 100% 100%;
-    height: 800px;
-    background-repeat: no-repeat;
-    background-position:right 100px;
-    padding-top: 50px;
-    background-clip: content-box;
+    /* background-color: #040613; */
+    /* background: url(../img/laptop.png); */
+    /* background-size: contain; */
+    /* height: 320px;  */
+    /* background-repeat: no-repeat; */
+    /* background-position:right 100px; */
+    padding-top: 0px;
+    /* background-clip: content-box; */
+    width: 45%;
+    margin-top: -370px;
+    /* outline: 1px solid pink; */
+    /* object-fit: cover; */
 }
 
-.graphic img{
-    width: 80%;
-    padding-top: 450px;
-}
 
 /*
     Дальше я сделал общие классы, которые применимы ко всем блокам.
@@ -260,10 +267,10 @@ header .bottom{
 .blocks{
     display: flex;
     align-items: flex-start;/* выравнивание флексов по вертикали */
-    width: 50%;
+    width: 42%;
     /* border: 1px solid white; */
     flex-wrap: wrap;/* разрешили перенос флексов на новую строку */
-    margin-left: 40%;
+    margin-left: 50%;
     
 }
 
@@ -287,6 +294,11 @@ header .bottom{
     text-decoration: underline;/* подчёркивание при наведении */
 }
 
+.Sasha3{
+    height: 300px;
+    background-color: whitesmoke;
+    margin-top: -85px;
+}
 
 @media (max-width:500px){
     .years13 .figures{
@@ -298,18 +310,103 @@ header .bottom{
         margin-bottom: 20px;
     }
 
+
     .years13 figure{
         width: 35%;
-        margin-right: 1%;
+        margin-right: 13%;
+        background-size: 50%;
     }
 
     .years13{
-        width: 70vw;
+        width: 100vw;
+        margin: auto;
+        padding-left:15px;
+        padding-right:10px;
     }
 
     .years13 h3{
         /* outline: 1px solid blue; */
         font-size: 13px;
     }
+
+    .blocks{
+        /* align-items: flex-start;выравнивание флексов по вертикали */
+        width: auto;
+        /* border: 1px solid white; */
+        /* flex-wrap: wrap;разрешили перенос флексов на новую строку */
+        margin-left: 5px;
+        
+    }
+
+    .blocks h3{
+        width: 100%;
+        margin: 0;
+        /* font-size: var(--font-block);
+        margin-top: 30px;
+        margin-right: 10px;
+        line-height: 120%;
+        font-weight: 400;
+        padding-top: 10px;
+        padding-bottom: 10px; */
+        margin-bottom: 20px; /* расстояние между блоками текста */
+    }
+
+    .graphic{
+        /* background-color: #040613; */
+        /* background: url(../img/laptop.png); */
+        /* background-size: contain; */
+        /* height: 320px;  */
+        /* background-repeat: no-repeat; */
+        /* background-position:right 100px; */
+        padding-top: 0px;
+        /* background-clip: content-box; */
+        width: 100%;
+        margin-top: 10px;
+        /* outline: 1px solid pink; */
+        /* object-fit: cover; */
+    }
+
+    .expertise{
+        /*background-color: black ;*/
+        padding-top: 30px;
+        /* background: linear-gradient(254.72deg,rgba(255,255,255,.276) -114.85%,rgba(255,255,255,0) 69.04%),#040613; */
+        /* padding-bottom: 80px; */
+        /* height: 839px; */
+        /* box-sizing: border-box;позволяет включить padding в height */
+        /* background-image: url(img/); */
+
+    }
+    
+    .years13 h2{
+        font-size: 7vw;
+    }
+
+    .expertise h2{
+        font-family: Montserrat-Bold; 
+        color: white;
+        font-size:7vw;
+        margin-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .graphic{
+        /* background-color: #040613; */
+        /* background: url(../img/laptop.png); */
+        /* background-size: contain; */
+        /* height: 320px;  */
+        /* background-repeat: no-repeat; */
+        /* background-position:right 100px; */
+        padding-top: 0px;
+        /* background-clip: content-box; */
+        width: 80%;
+        margin-bottom: -45px;
+        /* outline: 1px solid pink; */
+        /* object-fit: cover; */
+    }
+
+    .Sasha3{
+        margin-top: -10px;
+    }
+
 }
 
