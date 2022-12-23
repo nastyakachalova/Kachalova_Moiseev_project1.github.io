@@ -13,7 +13,8 @@ html {
     font-family: Montserrat;
 }
 :root{
-    --font-block:14px;
+    --font-
+    :14px;
 }
 /* 
 Следующие 3 блока отвечают за фоновое видео
@@ -74,8 +75,8 @@ header{
 }
 
 .spec{
-    padding: 1rem;
-    width: 200px;
+    padding: 5px 1rem;
+    width: 250px;
     border-left: 3px solid #f14d34;
 }
 
@@ -96,10 +97,11 @@ header{
 
 .img-pc {
     width: 40%;
+
 }
 
 #img-pc {
-    margin-top: 10rem;
+    margin-top: calc(10rem + 300px);
     width: 100%;
 }
 
@@ -141,6 +143,7 @@ header .bottom{
 
 #block3{
     background: linear-gradient(254.72deg,rgba(255,255,255,.276) -114.85%,rgba(255,255,255,0) 69.04%),#040613;
+    margin-top: -200px;
 }
 
 
@@ -306,26 +309,26 @@ header .bottom{
     line-height: 200%;/*межстрочное расстояние*/
     border-left: 3px solid #f14d34;
     padding-left: 15px;
-    margin-left: 40px;
+    margin-left: 15px;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+/* <<<<<<< HEAD<<<<<<< HEAD */
 .expertise{
     /*background-color: black ;*/
-    padding-top: 500px;
-    background: linear-gradient(254.72deg,rgba(255,255,255,.276) -114.85%,rgba(255,255,255,0) 69.04%),#040613;
+    padding-top: 270px;
+    background: linear-gradient(254.72deg,rgba(255,255,255,.276) -114.85%,rgba(255,255,255,0) 69.04%);
     /* padding-bottom: 80px; */
     /* height: 839px; */
     box-sizing: border-box;/* позволяет включить padding в height */
-    background-image: url(img/);
+    background-image: url(img/druplicon.svg);
     padding-bottom: 0px;
-}
-=======
 
->>>>>>> 0f09cd851872619fdb29cc3d88c3136baec459a3
+}
+/* ======= */
+
+/* >>>>>>> 0f09cd851872619fdb29cc3d88c3136baec459a3
 =======
->>>>>>> 9ebb814db2467f46dc4f621ca6aeec5758452ba3
+>>>>>>> 9ebb814db2467f46dc4f621ca6aeec5758452ba3 */
 
 
 .graphic{
@@ -414,8 +417,8 @@ header .bottom{
 }
 
 .mx-2 {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
 }
 
 .mx-auto {
@@ -445,6 +448,7 @@ header .bottom{
     margin-left: 50%;
     
 }
+
 
 .blocks h3{
     width: 40%;
