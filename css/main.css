@@ -203,9 +203,11 @@ header .bottom{
 }
 
 .header{
+    width: 400px;
     margin: 5rem auto;
-    font-size: 36px;
+    font-size: 38px;
     font-family: Montserrat-Bold;
+    font-weight: bold;
     text-align: center;
 }
 
@@ -216,12 +218,27 @@ header .bottom{
 
 .table-item{
     border-radius: 5px;
-    width: 500px;
-    height: 360px;
-    margin: 6px;
+    width: 260px;
+    height: 290px;
+    margin: 4px;
     background-color: white;
-    box-shadow: 10px 10px 400px rgba(0, 0, 0, 0.034); /* Параметры тени */
-    padding: 10px;
+    box-shadow: 100px 50px 100px rgba(0, 0, 0, 0.04); /* Параметры тени */
+    padding: 14px;
+    z-index: 0;
+}
+
+.item-logo{
+    height: 0px;
+    position: relative;
+    left: 193px;
+    top: 224px;
+    z-index: -1;
+}
+
+.item-logo img{
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
 }
 
 .item-id{
@@ -232,21 +249,38 @@ header .bottom{
 }
 
 .item-header{
-    font-size: 24px;
+    font-size: 20px;
     font-family: Montserrat-Bold;
     margin-bottom: 1rem;
 }
 
 .item-text{
     color:gray;
-    font-size: 20px;;
+    font-size: 20px;
+    z-index: 10;
 }
 
-.item-logo{
-    position: relative;
-    left: 136px;
-    top: 17px;
+
+/*
+ БЛОК: ТАРИФЫ
+*/
+
+.tarif{
+    border: 1px solid gray;
+    border-radius: 4px;
 }
+
+.tarif-header{
+    color: #f14d34;
+    font-family: Montserrat-Bold;
+}
+
+.tarif-specs{
+    list-style-image: ✓;
+}
+
+
+
 
 
 .years13 h3{
