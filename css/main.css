@@ -97,12 +97,23 @@ html {
     margin: 0 auto;
 }
 
-.spec{
+#block3 .spec{
     padding-left: 1rem;
-    width: 200px;
-    height: 120px;
+    width: 250px;
+    height: fit-content;/* по контенту */
     border-left: 3px solid #f14d34;
-    margin: 2rem;
+    /* margin: 2rem; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#block3 .mx-2 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#block3 #img-pc {
+    margin-top: 200px;
 }
 
 .spec h1{
@@ -209,53 +220,14 @@ header .bottom{
 #block3{
     background: linear-gradient(254.72deg,rgba(255,255,255,.276) -114.85%,rgba(255,255,255,0) 69.04%),#040613;
     background-image: url(../img/druplicon.svg);
-    background-color:rgba(0, 0, 0, 0.447);
-    background-size: 100vw 500px;
+    background-repeat: no-repeat;
+    background-position: right 270px;/* по оси x и y */
+    padding-top: 300px;
     margin-top: -200px;
-    background-repeat: no-repeat;
+    background-size: 50%;
+
 }
 
-#block5 .text-bold{
-    font-family: Montserrat-Bold;
-    font-size:30px;
-}
-
-#block5{
-    padding: 75px;
-}
-
-#block5 .flex{
-    justify-content: space-between;
-    margin-top: 30px;
-    margin-left: -50px;
-   
-}
-
-#block5 .mx-auto{
-    margin-left: 0;/* переопределение стилей Саши! */
-    margin-right: 0;/* переопределение стилей Саши! */
-}
-
-#block5 .spec_alt{
-    /* outline: 1px red solid; */
-    width: 20%; /* от ширины родителя */
-    background-image: url(../img/Vector.png);
-    background-position: 0 12%;
-    background-repeat: no-repeat;
-    padding-left: 50px;
-}
-
-#block5 .spec_alt img{
-    width: 40%;
-}
-
-#block5 .spec-upper{
-    font-family: Montserrat-Bold;/* переопределение стилей Саши! */
-}
-
-#block5 .spec-bot{
-    font-size: 18px;
-}
 
 
 .years13{
