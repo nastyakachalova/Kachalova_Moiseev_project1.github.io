@@ -695,20 +695,34 @@ header .bottom{
     
     #block5 .spec_alt{
         /* outline: 1px red solid; */
-        width: 90%; /* от ширины родителя */
+        width: 35%; /* от ширины родителя */
         background-image: url(../img/Vector.png);
         background-position: 0 12%;
         background-repeat: no-repeat;
-        padding-left: 10px;
+        /* padding-left: 10px; */
+        background-size:45%;
+        /* margin-left: 2rem; */
+        margin-left: 37%;
+        margin-top: 20px;
+        box-sizing: border-box;
+    
     }
     
     #block5 .spec_alt img{
         width: 40%;
+        margin: auto;
     }
 
     #block5 .spec-bot{
-        font-size: 18px;
+        font-size: 13px;
+        margin: 0;
+        padding:0;
+        margin-left: -50px;
     }
+
+    /* #block5 .mx-auto{
+        padding: 0;
+    } */
 }
 
 
