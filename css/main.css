@@ -116,6 +116,47 @@ html {
     margin-top: 200px;
 }
 
+#block5 .text-bold{
+    font-family: Montserrat-Bold;
+    font-size:30px;
+}
+
+#block5{
+    padding: 75px;
+}
+
+#block5 .flex{
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: -50px;
+   
+}
+
+#block5 .mx-auto{
+    margin-left: 0;/* переопределение стилей Саши! */
+    margin-right: 0;/* переопределение стилей Саши! */
+}
+
+#block5 .spec_alt{
+    /* outline: 1px red solid; */
+    width: 20%; /* от ширины родителя */
+    background-image: url(../img/Vector.png);
+    background-position: 0 12%;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+
+#block5 .spec_alt img{
+    width: 40%;
+}
+
+#block5 .spec-upper{
+    font-family: Montserrat-Bold;/* переопределение стилей Саши! */
+}
+
+#block5 .spec-bot{
+    font-size: 18px;
+}
 .spec h1{
     margin: 0;
     font-family: Montserrat-Bold;
@@ -594,16 +635,82 @@ header .bottom{
     #block3{
         margin: 0;
         padding: 0;
+        height:fit-content;
+        background-position: right 400px;
+        background-size: 75%;
     }
 
-    .expertise{
+    #block3 .flex{
         flex-direction: column;
+        width:80%;
+        height:fit-content;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
-    .spec{
+    #block3 .spec{
+        width: 100%;
+        margin-left: 1rem;
+    }
+
+    #block3 .exp-header h1{
+        font-size: 28px;
+        margin-left: 1rem;
+    }
+
+    #block3 .color-white{
+        display: flex;
+        flex-direction: column-reverse; /* img-pc и expertise поменяли местами(первые дочерние элементы) */
+    }
+
+    #block3 #img-pc {
+        margin-top: 20px;
         width: 100%;
     }
+    
+    #block3 .img-pc {
+        width: 95%;
+    }
+
+    #block5 .text-bold{
+        font-size:28px;
+    }
+    
+    #block5{
+        padding: 15px;
+    }
+    
+    #block5 .flex{
+        /* justify-content: space-between;
+        margin-top: 30px;
+        margin-left: -50px; */
+        flex-direction: column;
+       
+    }
+    
+    #block5 .mx-auto{
+        margin-left: 0;/* переопределение стилей Саши! */
+        margin-right: 0;/* переопределение стилей Саши! */
+    }
+    
+    #block5 .spec_alt{
+        /* outline: 1px red solid; */
+        width: 90%; /* от ширины родителя */
+        background-image: url(../img/Vector.png);
+        background-position: 0 12%;
+        background-repeat: no-repeat;
+        padding-left: 10px;
+    }
+    
+    #block5 .spec_alt img{
+        width: 40%;
+    }
+
+    #block5 .spec-bot{
+        font-size: 18px;
+    }
 }
+
 
 
 
