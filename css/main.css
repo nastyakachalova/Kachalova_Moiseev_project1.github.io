@@ -208,8 +208,54 @@ header .bottom{
 
 #block3{
     background: linear-gradient(254.72deg,rgba(255,255,255,.276) -114.85%,rgba(255,255,255,0) 69.04%),#040613;
+    background-image: url(../img/druplicon.svg);
+    background-color:rgba(0, 0, 0, 0.447);
+    background-size: 100vw 500px;
+    margin-top: -200px;
+    background-repeat: no-repeat;
 }
 
+#block5 .text-bold{
+    font-family: Montserrat-Bold;
+    font-size:30px;
+}
+
+#block5{
+    padding: 75px;
+}
+
+#block5 .flex{
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: -50px;
+   
+}
+
+#block5 .mx-auto{
+    margin-left: 0;/* переопределение стилей Саши! */
+    margin-right: 0;/* переопределение стилей Саши! */
+}
+
+#block5 .spec_alt{
+    /* outline: 1px red solid; */
+    width: 20%; /* от ширины родителя */
+    background-image: url(../img/Vector.png);
+    background-position: 0 12%;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+}
+
+#block5 .spec_alt img{
+    width: 40%;
+}
+
+#block5 .spec-upper{
+    font-family: Montserrat-Bold;/* переопределение стилей Саши! */
+}
+
+#block5 .spec-bot{
+    font-size: 18px;
+}
 
 
 .years13{
