@@ -590,7 +590,21 @@ header .bottom{
         /* outline: 1px solid blue; */
         font-size: 13px;
     }
+
+    #block3{
+        margin: 0;
+        padding: 0;
+    }
+
+    .expertise{
+        flex-direction: column;
+    }
+
+    .spec{
+        width: 100%;
+    }
 }
+
 
 
 /*
