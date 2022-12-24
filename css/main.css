@@ -546,6 +546,118 @@ header .bottom{
 }
 
 
+/*
+ БЛОК: ОТЗЫВЫ
+*/
+
+.reviews{
+    width: 960px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 200px #8b8b8b5e;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    padding: 2rem;
+    padding-right: 0;
+}
+
+.review-main{
+    transition: 500ms;
+    width: 64%;
+    padding: 14px 60px;
+    border-right: 1px solid #cdcdcd;
+    font-size: 14px;
+}
+
+.review-text{
+    font-family: Montserrat-Bold;
+}
+
+.review-author{
+    color:gray;
+}
+
+.review-author a{
+    color:black;
+}
+
+.review-number{
+    width: 36%;
+    display: flex;
+}
+
+.arrows{
+    margin: auto;
+}
+
+.arrows button{
+    width: 16px;
+    height: 32px;
+    border: none;
+}
+
+.review-counter {
+    font-size: 28px;
+    margin: 0 46px;
+    vertical-align: middle;
+    color: gray;
+}
+
+#reviews-scroller {
+    color: black;
+}
+
+#reviews-prev{
+    background: url(../img/arrow-left.svg) no-repeat center;
+    background-size: contain;
+}
+
+#reviews-next{
+    background: url(../img/arrow-right.svg) no-repeat center;
+    background-size: contain;
+}
+
+
+/*
+ БЛОК: FAQ
+*/
+
+.faq{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.question{
+    padding: 10px 20px;
+}
+
+.question-number{
+    color:gray;
+    font-size: smaller;
+}
+
+.question-selected{
+    border: 3px solid #f14d34;
+}
+
+.question-selected .question-header{
+    color:#f14d34
+}
+
+.question-selected .question-text{
+    display: block;
+}
+
+.question-header{
+    font-family: Montserrat-Bold;
+}
+
+.question-text{
+    display: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: gray;
+}
+
 
 
 .years13 h3{
