@@ -157,6 +157,52 @@ html {
 #block5 .spec-bot{
     font-size: 18px;
 }
+
+.block7 .last_cases{
+    font-size: 32px;
+    font-family: Montserrat-Bold;
+    text-align: center;
+}
+
+.block7 h3{
+    font-family: Montserrat-Bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.block7 h6{
+    color: #050C33;
+    font-weight: 100;
+    margin-top: 0;
+}
+
+.block7 h4{
+    color: #4E5A73;
+}
+
+.block7 .galary1{
+    display: flex;
+}
+
+.block7 .galary1 figure:first-child{/* псевдокласс на первый flex */
+    width: 33%;/* ширина первой figure */
+}
+
+.block7 .galary1 figure:first-child img{
+    width: 100%;
+    object-fit: cover; /* масштабируется картинка в блоке под изменяемый размер */
+}
+/* cover - по ширине */
+/* сcontain - по высоте */
+
+.block7 .galary1 figure:first-child figcaption{
+    padding: 10%;
+}
+
+.block7 .galary1 figure:last-child{/* псевдокласс на второй flex */
+    width: 30%;/* ширина первой figure */
+}
+
 .spec h1{
     margin: 0;
     font-family: Montserrat-Bold;
