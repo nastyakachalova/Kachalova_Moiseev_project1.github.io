@@ -178,6 +178,7 @@ html {
 
 .block7 h4{
     color: #4E5A73;
+    text-decoration: none;
 }
 
 .block7 .galary1{
@@ -188,6 +189,8 @@ html {
 
 .block7 .galary1 h3{
     margin-top: 0;
+    color: black;
+
 }
 
 .block7 .galary1 figure:first-child{/* псевдокласс на первый flex */
@@ -230,7 +233,7 @@ html {
 }
 
 .block7{
-    width: 100vw;
+    width: 98vw;
     /* outline: #f14d34 1px solid; */
 }
 
@@ -281,14 +284,68 @@ html {
     padding: 10%;
 }
 
-.block7 a{
+.block7 .relise{
     text-decoration: none;
     color:rgb(59, 143, 195);
 }
 
-.block7 a:hover{
+.block7 a{
+    text-decoration: none;
+}
+
+.block7 .relise:hover{
     text-decoration: underline;
 }
+
+.block7 h3:hover{
+    text-decoration: underline;
+}
+
+.block7 .using:hover{
+    text-decoration: underline;
+}
+
+.block7 .change{
+    text-decoration: none;
+    color: black;
+}
+
+.block7 .change:hover{
+    text-decoration: underline;
+}
+
+.block7 span{
+    color: #4E5A73 !important;
+}
+
+.block9{
+    width: 100vw; /* vw - view width - видимая  ширина окна просмотра браузера */
+}
+
+.block9 h4{
+    color: #4E5A73;
+    text-align: center;/* внутри блока текст по центру */
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.block9 .work{
+    font-size: 32px;
+    font-family: Montserrat-Bold;
+    text-align: center;
+}
+
+.block9 .row1{
+    display: flex;
+    align-items: center;
+}
+
+.block9 .row1 img{
+  margin-right: 10px;
+  width: 20vw;
+}
+
 .spec h1{
     margin: 0;
     font-family: Montserrat-Bold;
