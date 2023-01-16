@@ -192,6 +192,195 @@ html {
 #block5 .spec-bot{
     font-size: 18px;
 }
+
+.block7 .last_cases{
+    font-size: 32px;
+    font-family: Montserrat-Bold;
+    text-align: center;
+}
+
+.block7 h3{
+    font-family: Montserrat-Bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.block7 h6{
+    color: #050C33;
+    font-weight: 100;
+    margin-top: 0;
+}
+
+.block7 h4{
+    color: #4E5A73;
+    text-decoration: none;
+}
+
+.block7 .galary1{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.block7 .galary1 h3{
+    margin-top: 0;
+    color: black;
+
+}
+
+.block7 .galary1 figure:first-child{/* псевдокласс на первый flex */
+    width: 30%;/* ширина первой figure */
+    margin: 0;
+    /* outline: #040613 1px solid; */
+}
+
+.block7 .galary1 h4{
+    margin-bottom: 0;
+}
+.block7 .galary1 figure:first-child img{
+    width: 100%;
+    object-fit: cover; /* масштабируется картинка в блоке под изменяемый размер */
+}
+/* cover - по ширине */
+/* сcontain - по высоте */
+
+.block7 .galary1 figure:first-child figcaption{
+    padding: 10%;
+}
+
+.block7 .galary1 figure:last-child{/* псевдокласс на второй flex */
+    width: 60%;/* ширина второй figure */
+    margin: 0;
+    margin-left: 2%;
+}
+
+.block7 .galary1 figure:last-child img{
+    width: 100%;
+    object-fit: cover; /* масштабируется картинка в блоке под изменяемый размер */
+}
+
+.block7 .galary1 figure:last-child figcaption h4{
+    margin-top: -85px;
+    color: white !important;
+    margin-left: 5%;
+    width: 50%;
+    margin-bottom: 0;
+}
+
+.block7{
+    width: 98vw;
+    /* outline: #f14d34 1px solid; */
+}
+
+.block7 .galary2{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.block7 .galary2 figure{
+    margin: 0;
+    margin-right: 2%;
+    width: 29.5%;
+}
+
+.block7 .galary2 img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.block7 .galary2 figure:last-child{
+    margin-right: 0;
+}
+
+.block7 .galary2 figure:first-child figcaption{
+    margin-top: -170px;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.block7 .galary2 figure:nth-child(2) figcaption{
+    margin-top: -170px;
+    color: white;
+    margin-left: 10%;
+    margin-right: 15%;
+}
+
+.block7 .galary2 figure:first-child figcaption h6{
+    color: rgba(255, 255, 255, 0.548);
+}
+
+.block7 .galary2 figure:nth-child(2) figcaption h6{
+    color: rgba(255, 255, 255, 0.548);
+}
+
+.block7 .galary2 figure:last-child figcaption{
+    padding: 10%;
+}
+
+.block7 .relise{
+    text-decoration: none;
+    color:rgb(59, 143, 195);
+}
+
+.block7 a{
+    text-decoration: none;
+}
+
+.block7 .relise:hover{
+    text-decoration: underline;
+}
+
+.block7 h3:hover{
+    text-decoration: underline;
+}
+
+.block7 .using:hover{
+    text-decoration: underline;
+}
+
+.block7 .change{
+    text-decoration: none;
+    color: black;
+}
+
+.block7 .change:hover{
+    text-decoration: underline;
+}
+
+.block7 span{
+    color: #4E5A73 !important;
+}
+
+.block9{
+    width: 100vw; /* vw - view width - видимая  ширина окна просмотра браузера */
+}
+
+.block9 h4{
+    color: #4E5A73;
+    text-align: center;/* внутри блока текст по центру */
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.block9 .work{
+    font-size: 32px;
+    font-family: Montserrat-Bold;
+    text-align: center;
+}
+
+.block9 .row1{
+    display: flex;
+    align-items: center;
+}
+
+.block9 .row1 img{
+  margin-right: 10px;
+  width: 20vw;
+}
+
 .spec h1{
     margin: 0;
     font-family: Montserrat-Bold;
@@ -885,9 +1074,24 @@ header .bottom{
         margin-left: -50px;
     }
 
-    /* #block5 .mx-auto{
-        padding: 0;
-    } */
+    .block7 .galary1{
+        flex-direction: column;
+    }
+
+    .block7 .galary1 >*{
+        width: 95%!important;
+    }
+
+    .block7 .galary2{
+        flex-direction: column;
+    }
+
+    .block7 .galary2 >*{
+        width: 95%!important;
+        margin-bottom: 20px !important;
+        margin-top: 50px !important;
+    }
+
 }
 
 
