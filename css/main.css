@@ -31,8 +31,8 @@ html {
     margin-top: 5rem;
     position: absolute;
     top:0;
-    left:0;
-    width: 100%;
+    left:15%;
+    width: 1300px;
     height: 100%;
     z-index: 5;
 }
@@ -69,12 +69,17 @@ html {
 
 
 .drupal-main {
-    margin: 0 auto;
+    margin: 2rem auto;
     width: 400px;
 }
 
+.drupal-main h1{
+    font-family: Montserrat-Bold;
+    font-size: 48px;
+}
+
 .main-btn{
-    margin: 2rem auto;
+    margin: 2rem 0;
     width: fit-content;
 }
 
@@ -95,9 +100,39 @@ html {
 
 .main-specs{
     margin: 0 auto;
+    padding: 3rem;
 }
 
-#block3 .spec{
+.main-spec{
+    padding-left: 1rem;
+    width: 200px;
+    height: 100px;
+    border-left: 3px solid #f14d34;
+    margin: 10px;
+}
+
+.main-spec h1{
+    font-family: Montserrat-Bold;
+    margin: 0;
+}
+
+.main-spec h2{
+    font-family: Montserrat-Bold;
+    margin: 0;
+}
+
+.main-spec img{
+    position: relative;
+    top: -6px;
+}
+
+.main-spec p{
+    font-size: 11px;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.spec{
     padding-left: 1rem;
     width: 250px;
     height: fit-content;/* по контенту */
@@ -517,6 +552,23 @@ header .bottom{
     height: 750px;
 }
 
+@media (max-width: 1200px) {   
+    .table-4x2{
+        width: 100%;
+    }
+
+    .table-item{
+        width: 80%;
+        margin: 4px auto;
+        height: fit-content;
+    }
+
+    #block2{
+        height: 2800px;
+    }
+}
+
+
 .header{
     width: 400px;
     margin: 5rem auto;
@@ -541,6 +593,7 @@ header .bottom{
     padding: 14px;
     z-index: 0;
 }
+
 
 .item-logo{
     height: 0px;
@@ -734,6 +787,118 @@ header .bottom{
     background-color: #111111;
 }
 
+
+/*
+ БЛОК: ОТЗЫВЫ
+*/
+
+.reviews{
+    width: 960px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 200px #8b8b8b5e;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    padding: 2rem;
+    padding-right: 0;
+}
+
+.review-main{
+    transition: 500ms;
+    width: 64%;
+    padding: 14px 60px;
+    border-right: 1px solid #cdcdcd;
+    font-size: 14px;
+}
+
+.review-text{
+    font-family: Montserrat-Bold;
+}
+
+.review-author{
+    color:gray;
+}
+
+.review-author a{
+    color:black;
+}
+
+.review-number{
+    width: 36%;
+    display: flex;
+}
+
+.arrows{
+    margin: auto;
+}
+
+.arrows button{
+    width: 16px;
+    height: 32px;
+    border: none;
+}
+
+.review-counter {
+    font-size: 28px;
+    margin: 0 46px;
+    vertical-align: middle;
+    color: gray;
+}
+
+#reviews-scroller {
+    color: black;
+}
+
+#reviews-prev{
+    background: url(../img/arrow-left.svg) no-repeat center;
+    background-size: contain;
+}
+
+#reviews-next{
+    background: url(../img/arrow-right.svg) no-repeat center;
+    background-size: contain;
+}
+
+
+/*
+ БЛОК: FAQ
+*/
+
+.faq{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.question{
+    padding: 10px 20px;
+}
+
+.question-number{
+    color:gray;
+    font-size: smaller;
+}
+
+.question-selected{
+    border: 3px solid #f14d34;
+}
+
+.question-selected .question-header{
+    color:#f14d34
+}
+
+.question-selected .question-text{
+    display: block;
+}
+
+.question-header{
+    font-family: Montserrat-Bold;
+}
+
+.question-text{
+    display: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: gray;
+}
 
 
 
