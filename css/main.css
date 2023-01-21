@@ -1095,6 +1095,136 @@ header .bottom{
 }
 
 
+footer{
+    background:
+    url("https://drupal-coder.ru/themes/custom/bootstrap_dc/images/D-flying.svg") no-repeat top center/250px,
+    url("https://drupal-coder.ru/themes/custom/bootstrap_dc/images/D-footer.svg") no-repeat bottom right/200px,
+    linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(30,35,57,1) 100%);
+    color: #ffffff; 
+   padding:10px;
+}
+.request{
+    width:100%;
+    padding-top:30px;
+    padding-bottom:3rem;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    column-gap: 10%;
+}
+.rq-info{
+    margin-left:20px;
+}
+.rq-info,.rq-form{
+    flex:1;  
+}
+.rq-info-2 .call-number{
+    text-decoration:none; 
+}
+.rq-info-2 h3,h6{
+    margin:0;
+    padding-bottom:10px;
+}
+.rq-info-2 li{
+    list-style: none;
+    margin-left:-40px;
+}
+.rq-info-2 i{
+    float:left;
+     padding-right:15px;
+}
+.rq-info-1 h6, .rq-form h5{
+    font-weight:normal;
+}
+.rq-form{
+    text-align: center;
+}
+.rq-form input::placeholder {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    text-indent: 20px;
+}
+.rq-form  .field-name,.field-phone, .field-email,.field-msg, .sub-button {
+    background-color: transparent;
+    padding-top:15px;
+    padding-bottom:15px;
+    width:90%;
+    border-radius: 5px;
+}
+.field-msg{
+    padding-bottom:80px;
+}
+.accept{
+    text-align: left; 
+    margin-left:30px;
+    margin-top:-20px;
+    margin-bottom:-20px;
+}
+.sub-button{
+    background-color: #f14d34;
+    border: solid 3px #f14d34;
+}
+
+.sub-button:hover{
+    background-color: #000000;
+    transition: 500ms;
+}
+.rq-form input[type='checkbox'] {
+    width: 20px !important;
+    height: 20px !important;
+    appearance: none;
+    outline: 1px solid gray ;
+    background: transparent;
+    border-radius: 5px;
+    vertical-align: bottom;
+}
+.rq-form input[type='checkbox']:checked:after {
+    content: '✔';
+    color: white;
+    margin-left:5px;
+}
+.copyright{
+    border-top:1px solid gray;
+    width:100%;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+.fa-facebook,.fa-vk,.fa-paper-plane,.fa-youtube-play{
+    margin:5px;
+    background:#f14d34;
+    padding:5px;
+    padding-right:8px;
+    padding-left:8px;
+    border-radius: 3px;
+    text-decoration:none;
+}
+.cop-info{
+    width:100%;
+}
+@media  (min-width: 720px){
+    .request{
+        flex-direction: row;
+    }
+}
+@media  (min-width: 1200px){
+
+     .request{
+        width:1200px;
+    }
+     .rq-info-1{
+        padding-bottom:130px;
+    }
+     .cop-info{
+        width:1200px;
+    }
+    footer{
+    background:
+    url("https://drupal-coder.ru/themes/custom/bootstrap_dc/images/D-flying.svg") no-repeat top center/250px,
+    url("https://drupal-coder.ru/themes/custom/bootstrap_dc/images/D-footer.svg") no-repeat bottom right/450px,
+    linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(30,35,57,1) 100%);
+    }
+}
+
 
 
 /*
@@ -1173,3 +1303,6 @@ header .bottom{
     color:  #f14d34;
 }
 
+.color-gray {
+    color: #a8acb5;
+}
