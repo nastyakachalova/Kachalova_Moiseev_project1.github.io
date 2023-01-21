@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/main.css" rel='stylesheet'>
     <script src="js/Nastya.js"></script><!-- подключение js файла -->
     <title>25/1</title>
@@ -811,7 +812,60 @@
             </div>
         </div>
     </div>
-
+ <footer>
+        <div class="request">
+               <div class="rq-info">
+                    <div class="rq-info-1">
+                        <h1>Оставить заявку на поддержку сайта</h1>
+                        <h6> Срочно нужна поддержка сайта? 
+                        Ваша команда не успевает справиться самостоятельно или предыдущий подрядчик не справился с работой?
+                        Тогда вам точно к нам! Просто оставьте заявку и наш менеджер с вами свяжется!</h6>
+                    </div>
+                    <div class="rq-info-2">
+                    <a class="call-number" href="tel:88002222673"><i class="fa fa-phone"></i><span><h3>8 800 222 26 73</h3></span></a></br>
+                    <a class="color-white" href="mailto:info@drupal-coder.ru"><i class="fa fa-envelope-o"></i><span><h4>info@drupal-coder.ru</h4></span></a>
+                    </div>
+                </div>
+            <div class="rq-form">
+                <form class="ajaxForm" action="/"  method="POST">
+        
+                    <label>
+                       <input class="field-name"required type="name"
+                       value="Ваше имя" />
+                     </label><br />
+                    <label>
+                       <input class="field-phone"required type="phone"
+                       value="Телефон" />
+                     </label><br />
+                    <label>
+                       <input class="field-email"
+                       required type="email"
+                       value="E-mail" />
+                     </label><br />
+                    <label>
+                       <input class="field-msg"
+                       required type="message"
+                       value="Ваш комментарий" />
+                    </label><br />
+                             <label><div class="accept"><h5><input required type="checkbox" />
+                              Отправляя заявку, я даю согласие на 
+                              <span class="orange-text">обработку своих персональных данных.*</span></div></h5></label><br />
+                               <input class="sub-button" type="submit" value="СВЯЖИТЕСЬ С НАМИ" />
+                           </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="cop-info">
+                <a href="https://www.facebook.com/initlabkr/" class="fa fa-facebook"></a>
+                <a href="https://vk.com/initlab" class="fa fa-vk"></a>
+                <a href="https://teleg.one/initlabbot" class="fa fa-paper-plane"></a>
+                <a href="https://www.youtube.com/channel/UCyFEbngMB-bK2ulNtd_W43A" class="fa fa-youtube-play"></a>
+            </br>
+                Проект ООО «Инитлаб», Краснодар, Россия.</br>
+                Drupal является зарегистрированной торговой маркой Dries Buytaert.
+            </div>
+        </div>
+        </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
