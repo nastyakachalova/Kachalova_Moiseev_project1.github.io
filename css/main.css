@@ -1137,7 +1137,10 @@ footer{
 .rq-form{
     text-align: center;
 }
-
+.rq-form input::placeholder {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+}
 .rq-form  .field-name,.field-phone, .field-email,.field-msg, .sub-button {
     background-color: transparent;
     color:white;
