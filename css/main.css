@@ -1094,6 +1094,7 @@ header .bottom{
 
 }
 
+
 footer{
     background:
     url("https://drupal-coder.ru/themes/custom/bootstrap_dc/images/D-flying.svg") no-repeat top center/250px,
@@ -1101,49 +1102,50 @@ footer{
     linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(30,35,57,1) 100%);
     color: #ffffff; 
    padding:10px;
-
 }
-.request{   width:100%;
-    padding-top:10px;
-    padding-bottom:10px;
+.request{
+    width:100%;
+    padding-top:30px;
+    padding-bottom:3rem;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
-    flex-wrap: wrap;
-    display: flex;
-
     column-gap: 10%;
 }
-
+.rq-info{
+    margin-left:20px;
+}
 .rq-info,.rq-form{
-    flex:1;
-   
+    flex:1;  
 }
 .rq-info-2 .call-number{
-    text-decoration:none;
-    color:white;   
+    text-decoration:none; 
 }
-.rq-info-2 h3,h4{
+.rq-info-2 h3,h6{
     margin:0;
+    padding-bottom:10px;
+}
+.rq-info-2 li{
+    list-style: none;
+    margin-left:-40px;
 }
 .rq-info-2 i{
     float:left;
-     padding-right:5px;
+     padding-right:15px;
 }
-.rq-info h6, .rq-form h5{
+.rq-info-1 h6, .rq-form h5{
     font-weight:normal;
 }
-
 .rq-form{
     text-align: center;
 }
 .rq-form input::placeholder {
     opacity: 1;
     color: rgb(255, 255, 255);
+    text-indent: 20px;
 }
 .rq-form  .field-name,.field-phone, .field-email,.field-msg, .sub-button {
     background-color: transparent;
-    color:white;
     padding-top:15px;
     padding-bottom:15px;
     width:90%;
@@ -1168,42 +1170,36 @@ footer{
     transition: 500ms;
 }
 .rq-form input[type='checkbox'] {
-    accent-color: black;
     width: 20px !important;
-  height: 20px !important;
-  appearance: none;
-  outline: 1px solid gray ;
-  box-shadow: none;
-  background: transparent;
-  border-radius: 5px;
+    height: 20px !important;
+    appearance: none;
+    outline: 1px solid gray ;
+    background: transparent;
+    border-radius: 5px;
+    vertical-align: bottom;
 }
-    
 .rq-form input[type='checkbox']:checked:after {
-        content: '✔';
-        color: white;
-        margin-left:5px;
+    content: '✔';
+    color: white;
+    margin-left:5px;
 }
 .copyright{
-    border-top-style: solid;
-    border-color: gray;
-    border-width:1px;
+    border-top:1px solid gray;
     width:100%;
     padding-top:40px;
     padding-bottom:40px;
-  
 }
 .fa-facebook,.fa-vk,.fa-paper-plane,.fa-youtube-play{
     margin:5px;
-    color:white;
     background:#f14d34;
-    padding:5px; padding-right:8px;padding-left:8px;
+    padding:5px;
+    padding-right:8px;
+    padding-left:8px;
     border-radius: 3px;
     text-decoration:none;
 }
 .cop-info{
     width:100%;
-    margin-left: auto;
-    margin-right: auto;
 }
 @media  (min-width: 720px){
     .request{
@@ -1213,22 +1209,22 @@ footer{
 @media  (min-width: 1200px){
 
      .request{
-         width:1200px;
-          padding-bottom:80px;
-     }
+        width:1200px;
+    }
      .rq-info-1{
         padding-bottom:130px;
     }
      .cop-info{
         width:1200px;
-     }
-footer{
+    }
+    footer{
     background:
     url("https://drupal-coder.ru/themes/custom/bootstrap_dc/images/D-flying.svg") no-repeat top center/250px,
     url("https://drupal-coder.ru/themes/custom/bootstrap_dc/images/D-footer.svg") no-repeat bottom right/450px,
     linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(30,35,57,1) 100%);
+    }
 }
-   }
+
 
 
 /*
@@ -1307,3 +1303,6 @@ footer{
     color:  #f14d34;
 }
 
+.color-gray {
+    color: #a8acb5;
+}
