@@ -791,47 +791,50 @@ header .bottom{
 /*
  БЛОК: ОТЗЫВЫ
 */
-
-.reviews{
-    width: 960px;
+#block8 {
+    padding-bottom:5rem;
+}
+.reviews {
     margin: 0 auto;
     box-shadow: 0px 0px 200px #8b8b8b5e;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 5px;
     padding: 2rem;
     padding-right: 0;
+    flex-direction: column;
 }
 
-.review-main{
+.review-main {
     transition: 500ms;
-    width: 64%;
     padding: 14px 60px;
-    border-right: 1px solid #cdcdcd;
+    overflow:hidden;
+    margin-right:20px;
+    border-bottom: 1px solid #cdcdcd;
     font-size: 14px;
 }
 
-.review-text{
+.review-text {
     font-family: Montserrat-Bold;
 }
 
-.review-author{
-    color:gray;
+.review-author {
+    color: gray;
 }
 
-.review-author a{
-    color:black;
+.review-author a {
+    color: black;
 }
 
-.review-number{
-    width: 36%;
+.review-number {
     display: flex;
 }
 
-.arrows{
+.arrows {
     margin: auto;
+    padding: 10px;
 }
 
-.arrows button{
+.arrows button {
     width: 16px;
     height: 32px;
     border: none;
@@ -842,18 +845,19 @@ header .bottom{
     margin: 0 46px;
     vertical-align: middle;
     color: gray;
+
 }
 
 #reviews-scroller {
     color: black;
 }
 
-#reviews-prev{
+#reviews-prev {
     background: url(../img/arrow-left.svg) no-repeat center;
     background-size: contain;
 }
 
-#reviews-next{
+#reviews-next {
     background: url(../img/arrow-right.svg) no-repeat center;
     background-size: contain;
 }
@@ -862,38 +866,39 @@ header .bottom{
 /*
  БЛОК: FAQ
 */
-
-.faq{
-    width: 1200px;
+.faq {
     margin: 0 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom:3rem;
 }
 
-.question{
+.question {
     padding: 10px 20px;
 }
 
-.question-number{
-    color:gray;
+.question-number {
+    color: gray;
     font-size: smaller;
 }
 
-.question-selected{
+.question-selected {
     border: 3px solid #f14d34;
 }
 
-.question-selected .question-header{
-    color:#f14d34
+.question-selected .question-header {
+    color: #f14d34
 }
 
-.question-selected .question-text{
+.question-selected .question-text {
     display: block;
 }
 
-.question-header{
+.question-header {
     font-family: Montserrat-Bold;
 }
 
-.question-text{
+.question-text {
     display: none;
     margin-top: 1rem;
     margin-left: 1rem;
@@ -902,27 +907,28 @@ header .bottom{
 
 
 
-.years13 h3{
+.years13 h3 {
     background-color: white;
     color: #4f5a73;
-    font-size:18px;
-    font-family: Montserrat; 
+    font-size: 18px;
+    font-family: Montserrat;
 
 }
 
-.expertise h2{
-    font-family: Montserrat-Bold; 
+.expertise h2 {
+    font-family: Montserrat-Bold;
     color: white;
-    font-size:3vw;
+    font-size: 3vw;
     margin-left: 50%;
     margin-bottom: 30px;
 }
 
-.expertise h3{
-    font-family: Montserrat; 
+.expertise h3 {
+    font-family: Montserrat;
     color: #FFFFFFB3;
     font-size: var(--font-block);
-    line-height: 200%;/*межстрочное расстояние*/
+    line-height: 200%;
+    /*межстрочное расстояние*/
     border-left: 3px solid #f14d34;
     padding-left: 15px;
     margin-left: 40px;
@@ -930,11 +936,11 @@ header .bottom{
 
 
 
-.graphic{
+.graphic {
     /* background-color: #040613; */
     background: url(../img/laptop.png);
     background-size: contain;
-    height: 320px; 
+    height: 320px;
     background-repeat: no-repeat;
     /* background-position:right 100px; */
     padding-top: 50px;
@@ -944,7 +950,7 @@ header .bottom{
     outline: 1px solid pink;
 }
 
-.graphic img{
+.graphic img {
     width: 100%;
     /* padding-top: 450px; */
     height: 100%;
@@ -953,141 +959,147 @@ header .bottom{
 }
 
 
-.blocks a:hover{
-    text-decoration: underline;/* подчёркивание при наведении */
+.blocks a:hover {
+    text-decoration: underline;
+    /* подчёркивание при наведении */
 }
 
 
-@media (max-width:500px){
-    .years13 .figures{
+@media (max-width:500px) {
+    .years13 .figures {
         margin: auto;
         margin-top: 60px;
     }
 
-    .years13 h2, .years13 h3{
+    .years13 h2,
+    .years13 h3 {
         margin-bottom: 20px;
     }
 
-    .years13 figure{
+    .years13 figure {
         width: 35%;
         margin-right: 13%;
         background-size: 50%;
     }
 
-    .years13{
+    .years13 {
         width: 100vw;
         margin: auto;
-        padding-left:15px;
-        padding-right:10px;
+        padding-left: 15px;
+        padding-right: 10px;
     }
 
-    .years13 h3{
+    .years13 h3 {
         /* outline: 1px solid blue; */
         font-size: 13px;
     }
 
-    #block3{
+    #block3 {
         margin: 0;
         padding: 0;
-        height:fit-content;
+        height: fit-content;
         background-position: right 400px;
         background-size: 75%;
     }
 
-    #block3 .flex{
+    #block3 .flex {
         flex-direction: column;
-        width:80%;
-        height:fit-content;
+        width: 80%;
+        height: fit-content;
         margin-top: 0;
         margin-bottom: 0;
     }
 
-    #block3 .spec{
+    #block3 .spec {
         width: 100%;
         margin-left: 1rem;
     }
 
-    #block3 .exp-header h1{
+    #block3 .exp-header h1 {
         font-size: 28px;
         margin-left: 1rem;
     }
 
-    #block3 .color-white{
+    #block3 .color-white {
         display: flex;
-        flex-direction: column-reverse; /* img-pc и expertise поменяли местами(первые дочерние элементы) */
+        flex-direction: column-reverse;
+        /* img-pc и expertise поменяли местами(первые дочерние элементы) */
     }
 
     #block3 #img-pc {
         margin-top: 20px;
         width: 100%;
     }
-    
+
     #block3 .img-pc {
         width: 95%;
     }
 
-    #block5 .text-bold{
-        font-size:28px;
+    #block5 .text-bold {
+        font-size: 28px;
     }
-    
-    #block5{
+
+    #block5 {
         padding: 15px;
     }
-    
-    #block5 .flex{
+
+    #block5 .flex {
         /* justify-content: space-between;
         margin-top: 30px;
         margin-left: -50px; */
         flex-direction: column;
-       
+
     }
-    
-    #block5 .mx-auto{
-        margin-left: 0;/* переопределение стилей Саши! */
-        margin-right: 0;/* переопределение стилей Саши! */
+
+    #block5 .mx-auto {
+        margin-left: 0;
+        /* переопределение стилей Саши! */
+        margin-right: 0;
+        /* переопределение стилей Саши! */
     }
-    
-    #block5 .spec_alt{
+
+    #block5 .spec_alt {
         /* outline: 1px red solid; */
-        width: 35%; /* от ширины родителя */
+        width: 35%;
+        /* от ширины родителя */
         background-image: url(../img/Vector.png);
         background-position: 0 12%;
         background-repeat: no-repeat;
         /* padding-left: 10px; */
-        background-size:45%;
+        background-size: 45%;
         /* margin-left: 2rem; */
         margin-left: 37%;
         margin-top: 20px;
         box-sizing: border-box;
-    
+
     }
-    
-    #block5 .spec_alt img{
+
+    #block5 .spec_alt img {
         width: 40%;
         margin: auto;
     }
 
-    #block5 .spec-bot{
+    #block5 .spec-bot {
         font-size: 13px;
         margin: 0;
-        padding:0;
+        padding: 0;
         margin-left: -50px;
     }
 
-    .block7 .galary1{
+    .block7 .galary1 {
         flex-direction: column;
     }
 
-    .block7 .galary1 >*{
-        width: 95%!important;
+    .block7 .galary1>* {
+        width: 95% !important;
     }
 
-    .block7 .galary2{
+    .block7 .galary2 {
         flex-direction: column;
     }
 
-    .block7 .galary2 >*{
-        width: 95%!important;
+    .block7 .galary2>* {
+        width: 95% !important;
         margin-bottom: 20px !important;
         margin-top: 50px !important;
     }
@@ -1095,135 +1107,183 @@ header .bottom{
 }
 
 
-footer{
+footer {
     background:
-    url("https://drupal-coder.ru/themes/custom/bootstrap_dc/images/D-flying.svg") no-repeat top center/250px,
-    url("https://drupal-coder.ru/themes/custom/bootstrap_dc/images/D-footer.svg") no-repeat bottom right/200px,
-    linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(30,35,57,1) 100%);
-    color: #ffffff; 
-   padding:10px;
+        url("https://drupal-coder.ru/themes/custom/bootstrap_dc/images/D-flying.svg") no-repeat top center/250px,
+        url("https://drupal-coder.ru/themes/custom/bootstrap_dc/images/D-footer.svg") no-repeat bottom right/200px,
+        linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(30, 35, 57, 1) 100%);
+    color: #ffffff;
+    padding: 10px;
 }
-.request{
-    width:100%;
-    padding-top:30px;
-    padding-bottom:3rem;
+
+.request {
+    padding-top: 30px;
+    padding-bottom: 3rem;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
     column-gap: 10%;
 }
-.rq-info{
-    margin-left:20px;
+
+.rq-info {
+    margin-left: 20px;
 }
-.rq-info,.rq-form{
-    flex:1;  
+
+.rq-info,
+.rq-form {
+    flex: 1;
 }
-.rq-info-2 .call-number{
-    text-decoration:none; 
+
+.rq-info-2 .call-number {
+    text-decoration: none;
 }
-.rq-info-2 h3,h6{
-    margin:0;
-    padding-bottom:10px;
+
+.rq-info-2 h3,
+h6 {
+    margin: 0;
+    padding-bottom: 10px;
 }
-.rq-info-2 li{
+
+.rq-info-2 li {
     list-style: none;
-    margin-left:-40px;
+    margin-left: -40px;
 }
-.rq-info-2 i{
-    float:left;
-     padding-right:15px;
+
+.rq-info-2 i {
+    float: left;
+    padding-right: 15px;
 }
-.rq-info-1 h6, .rq-form h5{
-    font-weight:normal;
+
+.rq-info-1 h6,
+.rq-form h5 {
+    font-weight: normal;
 }
-.rq-form{
+
+.rq-form {
     text-align: center;
 }
+
 .rq-form input::placeholder {
     opacity: 1;
     color: rgb(255, 255, 255);
     text-indent: 20px;
 }
-.rq-form  .field-name,.field-phone, .field-email,.field-msg, .sub-button {
+
+.rq-form .field-name,
+.field-phone,
+.field-email,
+.field-msg,
+.sub-button {
     background-color: transparent;
-    padding-top:15px;
-    padding-bottom:15px;
-    width:90%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 90%;
     border-radius: 5px;
 }
-.field-msg{
-    padding-bottom:80px;
+
+.field-msg {
+    padding-bottom: 80px;
 }
-.accept{
-    text-align: left; 
-    margin-left:30px;
-    margin-top:-20px;
-    margin-bottom:-20px;
+
+.accept {
+    text-align: left;
+    margin-left: 30px;
+    margin-top: -20px;
+    margin-bottom: -20px;
 }
-.sub-button{
+
+.sub-button {
     background-color: #f14d34;
     border: solid 3px #f14d34;
 }
 
-.sub-button:hover{
+.sub-button:hover {
     background-color: #000000;
     transition: 500ms;
 }
+
 .rq-form input[type='checkbox'] {
     width: 20px !important;
     height: 20px !important;
     appearance: none;
-    outline: 1px solid gray ;
+    outline: 1px solid gray;
     background: transparent;
     border-radius: 5px;
     vertical-align: bottom;
 }
+
 .rq-form input[type='checkbox']:checked:after {
     content: '✔';
     color: white;
-    margin-left:5px;
+    margin-left: 5px;
 }
-.copyright{
-    border-top:1px solid gray;
-    width:100%;
-    padding-top:40px;
-    padding-bottom:40px;
+
+.copyright {
+    border-top: 1px solid gray;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-.fa-facebook,.fa-vk,.fa-paper-plane,.fa-youtube-play{
-    margin:5px;
-    background:#f14d34;
-    padding:5px;
-    padding-right:8px;
-    padding-left:8px;
+
+.fa-facebook,
+.fa-vk,
+.fa-paper-plane,
+.fa-youtube-play {
+    margin: 5px;
+    background: #f14d34;
+    padding: 5px;
+    padding-right: 8px;
+    padding-left: 8px;
     border-radius: 3px;
-    text-decoration:none;
+    text-decoration: none;
 }
-.cop-info{
-    width:100%;
-}
-@media  (min-width: 720px){
-    .request{
+
+@media (min-width: 768px) {
+
+    .request,
+    .reviews {
         flex-direction: row;
     }
-}
-@media  (min-width: 1200px){
 
-     .request{
-        width:1200px;
+    .review-main {
+        border-bottom: 0;
+        border-right: 1px solid #cdcdcd;
+        width: 64%;
     }
-     .rq-info-1{
-        padding-bottom:130px;
-    }
-     .cop-info{
-        width:1200px;
-    }
-    footer{
-    background:
-    url("https://drupal-coder.ru/themes/custom/bootstrap_dc/images/D-flying.svg") no-repeat top center/250px,
-    url("https://drupal-coder.ru/themes/custom/bootstrap_dc/images/D-footer.svg") no-repeat bottom right/450px,
-    linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(30,35,57,1) 100%);
+
+    .review-number {
+        width: 36%;
     }
 }
+
+@media (min-width: 1200px) {
+
+    .request,
+    .cop-info,
+    .faq {
+        width: 1200px;
+    }
+
+    .rq-info-1 {
+        padding-bottom: 130px;
+    }
+
+    footer {
+        background:
+            url("https://drupal-coder.ru/themes/custom/bootstrap_dc/images/D-flying.svg") no-repeat top center/250px,
+            url("https://drupal-coder.ru/themes/custom/bootstrap_dc/images/D-footer.svg") no-repeat bottom right/450px,
+            linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(30, 35, 57, 1) 100%);
+    }
+}
+
+@media (min-width:960px) {
+    .reviews {
+        width: 960px;
+    }
+
+}
+
+
+
 
 
 
