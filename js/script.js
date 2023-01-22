@@ -134,6 +134,15 @@ function faq12(){
         q.classList.add("question-selected");
     }
 }
+function myFunction() {
+    var x = document.getElementById("nav-btns");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
 
 $(function(){
     $(".ajaxForm").submit(function(e){

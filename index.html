@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
@@ -13,21 +13,44 @@
 <body onload="karusel_start()"> <!-- подключение функции со слайдером, в теге body, чтобы сразу она запустилась, onload - событие -->
     <header class="navbar mx-auto">
         <div class="container flex mx-auto">
-            <div class="nav-logo">
+            <div class="nav-1 flex"><div class="nav-logo">
                 <a href=""><img src="img/drupal-coder.svg" alt="Drupal Coder"></a>
             </div>
-            <div class="nav-btns color-white fs-12">
-                <ul class="flex">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a></div>
+            <div class="nav-btns color-white fs-12" id="nav-btns">
+                <ul class="nav-list">
                     <li class="mx-2"><a class="btn color-white" href="">ПОДДЕРЖКА DRUPAL</a></li>
-                    <li class="mx-2"><a class="btn color-white" href="">АДМИНИСТРИРОВАНИЕ</a></li>
+                    <li class="mx-2"><div class="menu">
+                            <a class="btn color-white" href="">АДМИНИСТРИРОВАНИЕ &#9660;</a>
+                            <div class="menu-links color-white">
+                                <a href="#">МИГРАЦИЯ</a>
+                                <a href="#">БЭКАПЫ</a>
+                                <a href="#">АУДИТ БЕЗОПАСНОСТИ</a>
+                                <a href="#">ОПТИМИЗАЦИЯ СКОРОСТИ</a>
+                                <a href="#">ПЕРЕЕЗД НА HTTPS</a>
+                                </div>
+                            </div>
+                    </li>
                     <li class="mx-2"><a class="btn color-white" href="">ПРОДВИЖЕНИЕ</a></li>
                     <li class="mx-2"><a class="btn color-white" href="">РЕКЛАМА</a></li>
-                    <li class="mx-2"><a class="btn color-white" href="">О НАС #</a></li>
+                    <li class="mx-2"><div class="menu">
+                    <a class="btn color-white" href="">О НАС &#9660;</a>
+                    <div class="menu-links color-white">
+                        <a href="#">КОМАНДА</a>
+                        <a href="#">DRUPALGIVE</a>
+                        <a href="#">БЛОГ</a>
+                        <a href="#">КУРСЫ DRUPAL</a>
+                        </div>
+                    </div>
+                </li>
+                    
                     <li class="mx-2"><a class="btn color-white" href="">ПРОЕКТЫ</a></li>
                     <li class="mx-2"><a class="btn color-white" href="">КОНТАКТЫ</a></li>
                 </ul>
             </div>
         </div>
+        
     </header>
 
 

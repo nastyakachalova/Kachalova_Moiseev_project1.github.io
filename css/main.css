@@ -458,12 +458,76 @@ header{
 
 .container{
     width: 1400px;
+    flex-direction:column;
 }
-
+.navbar {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    top:auto;
+    padding-bottom:0;
+    padding-top:10px;
+  }
+  
+  .navbar .nav-btns {
+    display: none;
+  }
+  .nav-list{
+    margin-left:-60px;
+  }
+  .fa-bars{
+    font-size:200%;
+    margin-right:10px;
+    margin-bottom:20px;
+  }
+  .btn, .menu-links a{
+    border-bottom:solid 1px rgb(69, 68, 68);
+    
+  }
+  .btn{
+    padding:10px;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .navbar a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  .nav-1{
+    margin-top: auto;
+    order:2;
+  }
 .nav-logo a img{
     height: 2rem;
+   
+}
+.nav-btns{
+    order:1;
+}
+.nav-btns a:hover {
+    color:#f14d34;
+}
+.menu-links {
+    min-width: 160px;
+    position:relative;
+    cursor: pointer;
+  }
+.menu-links a {
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    color:white;
 }
 
+.menu:hover .menu-links {
+    display: block;
+}
 
 .spec-upper {
     font-weight: bold;
@@ -1153,7 +1217,47 @@ h6 {
 }
 
 @media (min-width: 768px) {
-
+    .container{
+        flex-direction:row;
+    }
+    .nav-list{
+        display:flex;
+    }
+    .nav-1{
+        order:1;
+       margin-top:0;
+        }
+    .nav-btns a:hover {
+        color:white;
+    }
+    .navbar a.icon{
+        display:none;
+    }
+    .navbar{
+        background:transparent;
+        position:absolute;
+        top:0;
+        bottom:auto;
+         padding-top:30px;
+    }
+    .navbar .nav-btns{
+        display:block;
+    }
+    .btn{
+        border:0;
+        padding:0;
+    }
+    .menu-links{
+        background-color: #f14d34;
+        position:absolute;
+        display: none;
+    }
+    .menu-links a{
+        border:0;
+    }
+    .menu-links a:hover {
+        background-color: rgb(192, 67, 13);
+    }
     .request,
     .reviews {
         flex-direction: row;
@@ -1521,6 +1625,7 @@ h6 {
         font-size: 13px;
     }
 
+<<<<<<< HEAD
     #block2{
         height: fit-content;
         padding-bottom: 20px;
@@ -1529,3 +1634,6 @@ h6 {
 
 
 }
+=======
+}
+>>>>>>> eb8ae23bae649046d2e1ce9b4a7d084193ac38ec
