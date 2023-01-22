@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <link href="css/main.css" rel='stylesheet'>
+    <link href="css/main.css" rel="stylesheet">
     <script src="js/Nastya.js"></script><!-- подключение js файла -->
     <title>25/1</title>
 <body onload="karusel_start()"> <!-- подключение функции со слайдером, в теге body, чтобы сразу она запустилась, onload - событие -->
@@ -853,7 +853,7 @@
         <div class="request flex">
                <div class="rq-info">
                     <div class="rq-info-1">
-                        <h1>Оставить заявку на поддержку сайта</h1>
+                        <h3>Оставить заявку на поддержку сайта</h3>
                         <h6 class="color-gray"> Срочно нужна поддержка сайта? 
                         Ваша команда не успевает справиться самостоятельно или предыдущий подрядчик не справился с работой?
                         Тогда вам точно к нам! Просто оставьте заявку и наш менеджер с вами свяжется!</h6>
@@ -864,28 +864,28 @@
                     </ol></div>
                 </div>
             <div class="rq-form">
-                <form class="ajaxForm"  action="https://formcarry.com/s/Alp3NV0uq" method="POST">
+                <form class="ajaxForm" id="mainForm"  action="https://formcarry.com/s/Alp3NV0uq" method="POST">
         
                     <label>
-                       <input class="field-name color-white" required type="name" name="Name";
-                       placeholder="Ваше имя" />
-                     </label><br />
+                       <input class="field-name color-white" type="name" id="Name" required;
+                       placeholder="Ваше имя" >
+                     </label><br >
                     <label>
-                       <input class="field-phone color-white" required type="phone" name="Phone";
-                       placeholder="Телефон" />
-                     </label><br />
+                       <input class="field-phone color-white"  type="phone" id="Phone" required;
+                       placeholder="Телефон" >
+                     </label><br >
                     <label>
-                       <input class="field-email color-white" required type="email" name="E-mail";
-                       placeholder="E-mail" />
-                     </label><br />
+                       <input class="field-email color-white" type="email" id="E-mail" required;
+                       placeholder="E-mail" >
+                     </label><br >
                     <label>
-                       <input class="field-msg color-white" required type="message" name="Message";
-                       placeholder="Ваш комментарий" />
-                    </label><br />
-                             <label><div class="accept"><h5><input required type="checkbox" />
+                       <input class="field-msg color-white" type="message" id="Message" required;
+                       placeholder="Ваш комментарий" >
+                    </label><br >
+                             <label><div class="accept"><h5><input type="checkbox"  required>
                               Отправляя заявку, я даю согласие на 
-                              <span class="orange-text">обработку своих персональных данных.*</span></div></h5></label><br />
-                               <input class="sub-button color-white" type="submit" value="СВЯЖИТЕСЬ С НАМИ" />
+                              <span class="orange-text">обработку своих персональных данных.*</span></div></h5></label><br >
+                               <input class="sub-button color-white" type="submit" value="СВЯЖИТЕСЬ С НАМИ" >
                            </form>
             </div>
         </div>
