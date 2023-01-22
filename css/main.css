@@ -410,6 +410,7 @@ html {
     width: 1000vw;
     margin-left: -150px;
     transition: all 1s; /* плавный переход */
+    margin-top: 10px;
 }
 
 .spec h1{
