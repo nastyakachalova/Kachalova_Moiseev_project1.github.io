@@ -320,6 +320,7 @@ html {
 
 .block9{
     width: 100vw; /* vw - view width - видимая  ширина окна просмотра браузера */
+    overflow: hidden;/* то, что больше 100, должно быть скрыто */
 }
 
 .block9 h4{
@@ -328,6 +329,7 @@ html {
     width: 60%;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .block9 .work{
@@ -337,13 +339,42 @@ html {
 }
 
 .block9 .row1{
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
+    width: 1000vw;
+    transition: all 1s;
+    
 }
 
+
+
 .block9 .row1 img{
-  margin-right: 10px;
-  width: 20vw;
+    outline: 1px solid rgba(128, 128, 128, 0.386);
+    border-radius: 5px;
+    /* display: inline;//строчный элемент */
+    width: 290px;
+    margin-right: 10px;
+    height: 150px;
+    object-fit: cover;/* картинка без искажения */
+}
+
+
+.block9 .row2 img{
+    outline: 1px solid rgba(128, 128, 128, 0.386);
+    border-radius: 5px;
+    /* display: inline;//строчный элемент */
+    width: 290px;
+    margin-right: 10px;
+    height: 150px;
+    object-fit: cover;/* картинка без искажения */
+}
+
+.block9 .row2{
+    /* display: flex; */
+    /* align-items: center; */
+    width: 1000vw;
+    margin-left: -150px;
+    transition: all 1s; /* плавный переход */
 }
 
 .spec h1{
@@ -925,6 +956,11 @@ header .bottom{
         width: 95%!important;
         margin-bottom: 20px !important;
         margin-top: 50px !important;
+    }
+
+    .block9 h4{
+        text-align: left;
+        margin-left: 0;
     }
 
 }
