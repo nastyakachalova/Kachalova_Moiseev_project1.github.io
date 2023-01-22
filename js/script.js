@@ -137,35 +137,30 @@ function faq12(){
 
 function myFunction() {
     var x = document.getElementById("nav-btns");
-    if (x.style.display === "block") {
-        x.style.display = "none";
+    if (x.classList.contains("closed")) {
+        x.classList.remove("closed");
     } else {
-      x.style.display = "block";
+      x.classList.add("closed");;
     }
   }
 
-  document.getElementById("mainForm").addEventListener("submit", function(e){
-    e.preventDefault();
-  
-    n = document.getElementById("Name").value;
-    p = document.getElementById("Phone").value;
-    email = document.getElementById("E-mail").value;
-    subject = document.getElementById("Message").value;
-    console.log(n);
-  var formData = new FormData();
-  formData.append('Name', n);
-  formData.append('Phone', p);
-  formData.append('E-Mail', email);
-  formData.append('Message', subject);
-  console.log(formData);
-  fetch('https://formcarry.com/s/Alp3NV0uq/json', {
-    method: 'POST',
-    body: formData
-  })
-  .then(data => {
-    console.log('Success:', data);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
-  });
+
+$(function(){
+    $(".ajaxForm").submit(function(e){
+        e.preventDefault();
+        var href = $(this).attr("action");
+        $.ajax({
+            type: "POST",
+            dataType: "json",
+            url: href,
+            data: $(this).serialize(),
+            success: function(response){
+                if(response.status == "success"){
+                    alert("Заявка была успешно отправлена!");
+                }else{
+                    alert("Произошла ошибка... " + response.message);
+                }
+            }
+        });
+    });
+});
