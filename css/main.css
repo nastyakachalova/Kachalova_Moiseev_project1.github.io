@@ -1521,6 +1521,11 @@ h6 {
         width: 100vw;
     }
 
+    #block6 .header{
+        width: 90vw;
+        font-size: 28px;
+    }
+
     #block6 .team-member img{
         width: 100%;
     }
