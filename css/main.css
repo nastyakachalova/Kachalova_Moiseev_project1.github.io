@@ -674,7 +674,7 @@ header .bottom{
     }
 
     #block2{
-        height: 2800px;
+        height: fit-content;
     }
 }
 
