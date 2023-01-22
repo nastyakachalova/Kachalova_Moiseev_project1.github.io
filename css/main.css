@@ -23,29 +23,24 @@ html {
 
 #block0{
     color: white;
-    
     position: relative;
     width: 100%;
-    padding-top:45%;
     overflow: hidden;
     z-index: -100;
 }
 
 .main{
-    margin-top: 5rem;
     position: absolute;
     top:0;
-    left:15%;
-    width: 1300px;
+    left:5%;
     height: 100%;
     z-index: 5;
 }
 
-
 @media (max-width: 1200px){
     #block0 {
         background-color: #111111;
-        height: 1000px;
+        height: 800px;
     }
     .spec{
         margin: 1rem auto;
@@ -74,17 +69,19 @@ html {
 
 .drupal-main {
     margin: 2rem auto;
-    width: 400px;
+    font-size:75%;
 }
 
 .drupal-main h1{
     font-family: Montserrat-Bold;
-    font-size: 48px;
+    font-size: 24px;
 }
 
 .main-btn{
     margin: 2rem 0;
     width: fit-content;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .main-btn button{
@@ -104,7 +101,6 @@ html {
 
 .main-specs{
     margin: 0 auto;
-    padding: 3rem;
 }
 
 .main-spec{
@@ -286,8 +282,7 @@ html {
 .block7 .galary2{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    padding-top: 20px;
+    margin-top: 0;
 }
 
 .block7 .galary2 figure{
@@ -458,8 +453,9 @@ header{
 }
 
 .container{
-    width: 1400px;
+
     flex-direction:column;
+    flex-wrap:wrap;
 }
 .navbar {
     background-color: rgb(0, 0, 0);
@@ -469,10 +465,7 @@ header{
     padding-bottom:0;
     padding-top:10px;
   }
-  
-  .navbar .nav-btns {
-    display: none;
-  }
+
   .nav-list{
     margin-left:-60px;
   }
@@ -504,9 +497,11 @@ header{
     margin-top: auto;
     order:2;
   }
+   .closed{
+    display:none;
+        }
 .nav-logo a img{
     height: 2rem;
-   
 }
 .nav-btns{
     order:1;
@@ -674,7 +669,7 @@ header .bottom{
     }
 
     #block2{
-        height: fit-content;
+        height: 2800px;
     }
 }
 
@@ -682,7 +677,7 @@ header .bottom{
 .header{
     width: 400px;
     margin: 5rem auto;
-    font-size: 38px;
+    font-size: 28px;
     font-family: Montserrat-Bold;
     font-weight: bold;
     text-align: center;
@@ -918,14 +913,13 @@ header .bottom{
     box-shadow: 0px 0px 200px #8b8b8b5e;
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 5px;
-    padding: 2rem;
     padding-right: 0;
     flex-direction: column;
 }
 
 .review-main {
     transition: 500ms;
-    padding: 14px 60px;
+    padding: 14px 30px;
     overflow:hidden;
     margin-right:20px;
     border-bottom: 1px solid #cdcdcd;
@@ -1216,18 +1210,30 @@ h6 {
     border-radius: 3px;
     text-decoration: none;
 }
-
 @media (min-width: 768px) {
-    .container{
-        flex-direction:row;
+    .header{
+        font-size: 38px;
+    }
+    .main{
+        margin-top:5rem;
+        left:15%;
+    }
+    .main-specs{
+        padding: 3rem;
     }
     .nav-list{
         display:flex;
+        margin-left:0px;
+        flex-wrap:wrap;
+        
     }
     .nav-1{
         order:1;
        margin-top:0;
         }
+     .closed{
+        display:block;
+    }
     .nav-btns a:hover {
         color:white;
     }
@@ -1247,6 +1253,7 @@ h6 {
     .btn{
         border:0;
         padding:0;
+        padding-bottom:10px;
     }
     .menu-links{
         background-color: #f14d34;
@@ -1259,24 +1266,51 @@ h6 {
     .menu-links a:hover {
         background-color: rgb(192, 67, 13);
     }
+    .drupal-main{
+        font-size:100%;
+    }
+    .drupal-main h1{
+        font-size: 48px;
+    }
     .request,
     .reviews {
         flex-direction: row;
     }
-
+    .reviews{
+    padding: 4rem;
+    }
     .review-main {
+        padding: 14px 60px;
         border-bottom: 0;
         border-right: 1px solid #cdcdcd;
-        width: 64%;
+        width: 62%;
     }
 
     .review-number {
-        width: 36%;
+        width: 38%;
+    }
+    .rq-info-1 h3{
+        font-size:175%;
     }
 }
 
 @media (min-width: 1200px) {
-
+    #block0{
+        padding-top:45%;
+    }
+    .main{
+        width: 1300px;
+    }
+    .main-btn{
+        margin-left:0;
+        margin-right:0;
+    }
+    .drupal-main {
+        width: 400px;
+    }
+.container{
+    width: 1400px;
+}
     .request,
     .cop-info,
     .faq {
@@ -1521,11 +1555,6 @@ h6 {
         width: 100vw;
     }
 
-    #block6 .header{
-        width: 90vw;
-        font-size: 28px;
-    }
-
     #block6 .team-member img{
         width: 100%;
     }
@@ -1630,6 +1659,8 @@ h6 {
     #block2 .item-text{
         font-size: 13px;
     }
+
+}
 
 <<<<<<< HEAD
     #block2{
