@@ -138,9 +138,11 @@ function faq12(){
 function myFunction() {
     var x = document.getElementById("nav-btns");
     if (x.classList.contains("closed")) {
-        x.classList.remove("closed");
+        $( ".nav-btns" ).slideDown( "slow", function() { });
+         x.classList.remove("closed");
     } else {
-      x.classList.add("closed");;
+      x.classList.add("closed");
+       $( ".nav-btns" ).slideUp( "slow", function() { });
     }
   }
 
@@ -157,7 +159,7 @@ document.getElementById("mainForm").addEventListener("submit", function(e){
   formData.append('E-Mail', email);
   formData.append('Message', subject);
   console.log(formData);
-  fetch('https://formcarry.com/s/Alp3NV0uq/json', {
+  fetch('https://formcarry.com/s/Alp3NV0uq', {
     method: 'POST',
     body: formData
   })
