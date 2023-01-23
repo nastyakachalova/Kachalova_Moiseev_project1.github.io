@@ -136,13 +136,12 @@ function faq12(){
 }
 
 function myFunction() {
-    var x = document.getElementById("nav-btns");
+    var x = document.getElementById("nav-btns")
+    ; $( ".nav-btns" ).slideToggle( "slow"); 
     if (x.classList.contains("closed")) {
-        $( ".nav-btns" ).slideDown( "slow", function() { });
          x.classList.remove("closed");
     } else {
-      x.classList.add("closed");
-       $( ".nav-btns" ).slideUp( "slow", function() { });
+            x.classList.add("closed");
     }
   }
 
