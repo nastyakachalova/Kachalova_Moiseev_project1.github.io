@@ -147,12 +147,10 @@ function myFunction() {
 
 document.getElementById("mainForm").addEventListener("submit", function(e){
     e.preventDefault();
-  
     n = document.getElementById("Name").value;
     p = document.getElementById("Phone").value;
     email = document.getElementById("E-mail").value;
     subject = document.getElementById("Message").value;
-    console.log(n);
   var formData = new FormData();
   formData.append('Name', n);
   formData.append('Phone', p);
