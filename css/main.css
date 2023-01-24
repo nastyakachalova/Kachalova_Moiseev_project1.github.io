@@ -221,7 +221,7 @@ header{
     padding-left: 120px;
     /* width: 100vw; */
     box-sizing: border-box;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     padding-right: 50px;
 
 }
@@ -1049,7 +1049,7 @@ header .bottom{
     padding-left: 120px;
     /* width: 100vw; */
     box-sizing: border-box;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     padding-right: 50px;
 
 }
