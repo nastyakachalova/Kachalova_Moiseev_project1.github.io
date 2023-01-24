@@ -33,9 +33,9 @@ header{
     padding-bottom: 4px;
 }
 
-.btn {
+/* .btn {
     text-decoration: none;   
-}
+} */
 
 .nav-btns ul{
     list-style: none;
@@ -125,37 +125,35 @@ header{
 
 #block0{
     color: white;
-    
     position: relative;
     width: 100%;
-    padding-top:45%;
     overflow: hidden;
     z-index: -100;
 }
 
 .main{
-    margin-top: 5rem;
     position: absolute;
     top:0;
-    left:15%;
-    width: 1300px;
+    left:5%;
     height: 100%;
     z-index: 5;
-}  
+}
 
 .drupal-main {
     margin: 2rem auto;
-    width: 400px;
+    font-size:75%;
 }
 
 .drupal-main h1{
     font-family: Montserrat-Bold;
-    font-size: 48px;
+    font-size: 24px;
 }
 
 .main-btn{
     margin: 2rem 0;
     width: fit-content;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .main-btn button{
@@ -175,7 +173,6 @@ header{
 
 .main-specs{
     margin: 0 auto;
-    padding: 3rem;
 }
 
 .main-spec{
@@ -386,6 +383,17 @@ header{
 }
 
 
+.spec{
+    padding-left: 1rem;
+    width: 250px;
+    height: fit-content;
+    border-left: 3px solid #f14d34;
+    margin: 2rem; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+} 
+
+
 
 
 /* block4 */
@@ -498,21 +506,6 @@ header{
 .tarif-other a{
     color:black;
     text-decoration: underline;
-}
-
-
-
-
-
-
-.spec{
-    padding-left: 1rem;
-    width: 250px;
-    height: fit-content;/* по контенту */
-    border-left: 3px solid #f14d34;
-    /* margin: 2rem; */
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 
@@ -712,8 +705,7 @@ header{
 .block7 .galary2{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    padding-top: 20px;
+    margin-top: 0;
 }
 
 .block7 .galary2 figure{
@@ -806,14 +798,13 @@ header{
     box-shadow: 0px 0px 200px #8b8b8b5e;
     border: 1px solid rgba(0, 0, 0, .1);
     border-radius: 5px;
-    padding: 2rem;
     padding-right: 0;
     flex-direction: column;
 }
 
 .review-main {
     transition: 500ms;
-    padding: 14px 60px;
+    padding: 14px 30px;
     overflow:hidden;
     margin-right:20px;
     border-bottom: 1px solid #cdcdcd;
@@ -868,6 +859,491 @@ header{
     background: url(../img/arrow-right.svg) no-repeat center;
     background-size: contain;
 }
+
+
+
+
+
+
+/* block9 */
+.block9 .row1 img{
+    outline: 1px solid rgba(128, 128, 128, 0.386);
+    border-radius: 5px;
+    /* display: inline;//строчный элемент */
+    width: 290px;
+    margin-right: 10px;
+    height: 150px;
+    object-fit: cover;/* картинка без искажения */
+}
+
+
+.block9 .row2 img{
+    outline: 1px solid rgba(128, 128, 128, 0.386);
+    border-radius: 5px;
+    /* display: inline;//строчный элемент */
+    width: 290px;
+    margin-right: 10px;
+    height: 150px;
+    object-fit: cover;/* картинка без искажения */
+}
+
+.block9 .row2{
+    /* display: flex; */
+    /* align-items: center; */
+    width: 1000vw;
+    margin-left: -150px;
+    transition: all 1s; /* плавный переход */
+    margin-top: 10px;
+}
+
+
+
+
+
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: transparent;
+    z-index: 10;
+}
+
+.btn {
+    text-decoration: none;   
+}
+
+.nav-btns ul{
+    list-style: none;
+}
+
+.container{
+
+    flex-direction:column;
+    flex-wrap:wrap;
+}
+.navbar {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    top:auto;
+    padding-bottom:0;
+    padding-top:10px;
+  }
+
+  .nav-list{
+    margin-left:-60px;
+  }
+  .fa-bars{
+    font-size:200%;
+    margin-right:10px;
+    margin-bottom:20px;
+  }
+  .btn, .menu-links a{
+    border-bottom:solid 1px rgb(69, 68, 68);
+    
+  }
+  .btn{
+    padding:10px;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .navbar a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+  .nav-1{
+    margin-top: auto;
+    order:2;
+  }
+   .closed{
+    display:none;
+        }
+.nav-logo a img{
+    height: 2rem;
+}
+.nav-btns{
+    order:1;
+}
+.nav-btns a:hover {
+    color:#f14d34;
+}
+.menu-links {
+    min-width: 160px;
+    position:relative;
+    cursor: pointer;
+  }
+.menu-links a {
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    color:white;
+}
+
+.menu:hover .menu-links {
+    display: block;
+}
+
+.spec-upper {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#spec-1 .spec-upper{
+    font-size: 48px;
+}
+
+.spec-bot {
+    font-weight: lighter;
+    font-size: 12px;
+
+}
+
+
+
+/*задание фона, отступы*/
+header .top{
+    padding: 50px 100px; /*увеличили размер, отступы сверху и снизу, слева и справа*/
+    box-sizing: border-box;/*ширина блока вместе с пэддингами*/
+    background-color: black;
+    padding-bottom: 200px;/*отступ снизу*/
+    background-size: contain;
+}
+
+header .bottom{
+  padding: 200px;
+}
+
+.button-tarif{
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    width: 220px;
+    max-width: 100%;
+    border-radius: 5px;/*закругление*/
+    font-family: Montserrat;
+    border:2px solid #f14d34;
+    padding: 22px 20px; /*увеличили размер, отступы сверху и снизу, слева и справа*/
+    margin: 70px auto;/*отступ сверху и снизу, вырвнивание по середине */
+
+}
+
+
+
+
+
+.years13{
+    padding-top: 110px;
+    padding-left: 120px;
+    /* width: 100vw; */
+    box-sizing: border-box;
+    outline: 1px solid red;
+    padding-right: 50px;
+
+}
+.years13 h2{
+    background-color: white;
+    color:black;
+    font-size: 28px;;
+    margin-bottom: 25px;
+    font-family: Montserrat-Bold; 
+
+
+}
+
+.years13 .figures{
+    display:flex;
+    justify-content: flex-start;
+    margin-top: 60px;
+    flex-wrap: wrap; /* разрешить переход на новую строку */
+}
+
+.years13 figure{
+    background-image: url(../img/Vector.png);
+    background-position: 10% 8%;
+    background-repeat: no-repeat;
+    width: 20%;
+    text-align: center;
+    margin: 0;
+    margin-right: 5%;
+    /* outline: 1px solid green; */
+}
+
+.years13 figcaption{
+    text-align: left;
+    font-size: 18px;
+    padding-left: 12px;
+    width: 100%;
+}
+
+.years13 figure img{
+    width: 40%;
+}
+
+/*
+ БЛОК "ПОДДЕРЖКА ОТ DRUPAL-CODER
+*/
+
+#block2{
+    margin-bottom: 0;
+    height: 750px;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 1200px) {   
+    .table-4x2{
+        width: 100%;
+    }
+
+    .table-item{
+        width: 80%;
+        margin: 4px auto;
+        height: fit-content;
+    }
+
+    #block2{
+        height: 2800px;
+    }
+}
+
+
+.header{
+    width: 400px;
+    margin: 5rem auto;
+    font-size: 28px;
+    font-family: Montserrat-Bold;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table-4x2{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.table-item{
+    border-radius: 5px;
+    width: 260px;
+    height: 290px;
+    margin: 4px;
+    background-color: white;
+    box-shadow: 100px 50px 100px rgba(0, 0, 0, 0.04); /* Параметры тени */
+    padding: 14px;
+    z-index: 0;
+}
+
+
+.item-logo{
+    height: 0px;
+    position: relative;
+    left: 193px;
+    top: 224px;
+    z-index: -1;
+}
+
+.item-logo img{
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+}
+
+.item-id{
+    font-size: 10px;
+    font-family: Montserrat-Bold;
+    color: gray;
+    margin-bottom: 1rem;
+}
+
+.item-header{
+    font-size: 20px;
+    font-family: Montserrat-Bold;
+    margin-bottom: 1rem;
+}
+
+.item-text{
+    color:gray;
+    font-size: 20px;
+    z-index: 10;
+}
+
+
+/*
+ БЛОК: ТАРИФЫ
+*/
+
+#block4{
+    margin-bottom: 10rem;
+    position: relative;
+    margin-top: -85px;
+    z-index: 0;
+    background-color: white;
+}
+
+#block4 img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -10;
+}
+
+
+#block4 .header{
+    background-color: white;
+    margin:0 auto;
+    padding: 80px;
+}
+
+.tarif-list{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.tarif{
+    margin: auto 10px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+    padding: 2rem 2rem;
+    width: 330px;
+    background-color: white;
+}
+
+#tarif-start{
+    height: fit-content;
+}
+
+#tarif-business{
+    height: 500px;
+    padding-top: 20px;
+    box-shadow: 0px 0px 200px #8b8b8b5e;
+}
+
+#tarif-vip{
+    height: fit-content;
+}
+
+.tarif-header{
+    font-size: 22px;
+    color: #f14d34;
+    font-family: Montserrat-Bold;
+    margin: 2rem 0;
+}
+
+
+.tarif hr{
+    height: 2px;
+    background-color: rgb(204, 204, 204);
+    border: none;
+}
+
+
+.tarif-specs{
+    list-style-image: url(../img/Vector.svg);
+}
+
+.tarif-specs li{
+    margin: 1rem 0;
+}
+
+
+.tarif-btn{
+    margin: 2rem auto;
+    width: fit-content;
+}
+
+.tarif-btn button{
+    width: 15rem;
+    height: 3rem;
+    border: 1px solid #f14d34;
+    border-radius: 4px;
+    color: #f14d34;
+    background-color: white;
+}
+
+.tarif-btn button:hover{
+    transition: 100ms;
+    color: #ffffff;
+    background-color: #f14d34;
+}
+
+.tarif-other{
+    margin: 0 auto;
+    text-align: center;
+    width: 500px;
+    margin-top: 3rem;
+}
+
+.tarif-other p{
+    color:#4f5a73;
+    margin-bottom: 1rem;
+}
+
+.tarif-other a{
+    color:black;
+    text-decoration: underline;
+}
+
+
+/*
+ БЛОК: КОМАНДА
+*/
+
+
+.team{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member{
+    width: 330px;
+    margin: 2rem;
+    margin-top: 0;
+}
+
+.team-member img{
+    width: 330px;
+}
+
+.member-name{
+    font-family: Montserrat-Bold;
+    font-size: larger;
+    margin-top: 1rem;
+}
+
+.member-text{
+    margin-top: 1rem;
+    color: #4f5a73;
+}
+
+.team-btn{
+    margin: 2rem auto;
+    width: fit-content;
+}
+
+.team-btn button{
+    width: 15rem;
+    height: 3rem;
+    border: 1px solid gray;
+    border-radius: 4px;
+    color: #111111;
+    background-color: white;
+}
+
+.team-btn button:hover{
+    transition: 100ms;
+    color: #ffffff;
+    background-color: #111111;
+}
+
 
 
 
@@ -1076,7 +1552,7 @@ header .bottom{
 
 
 
-/* .expertise h2 {
+.expertise h2 {
     font-family: Montserrat-Bold;
     color: white;
     font-size: 3vw;
@@ -1089,11 +1565,12 @@ header .bottom{
     color: #FFFFFFB3;
     font-size: var(--font-block);
     line-height: 200%;
-    /*межстрочное расстояние*/
+    /* межстрочное расстояние */
     border-left: 3px solid #f14d34;
     padding-left: 15px;
     margin-left: 40px;
-}
+} 
+
 
 
 
@@ -1260,6 +1737,133 @@ h6 {
 }
 
 
+@media (min-width: 768px) {
+    .header{
+        font-size: 38px;
+    }
+    .main{
+        margin-top:5rem;
+        left:15%;
+    }
+    .main-specs{
+        padding: 3rem;
+    }
+    .nav-list{
+        display:flex;
+        margin-left:0px;
+        flex-wrap:wrap;
+        
+    }
+    .nav-1{
+        order:1;
+       margin-top:0;
+        }
+     .closed{
+        display:block;
+    }
+    .nav-btns a:hover {
+        color:white;
+    }
+    .navbar a.icon{
+        display:none;
+    }
+    .navbar{
+        background:transparent;
+        position:absolute;
+        top:0;
+        bottom:auto;
+         padding-top:30px;
+    }
+    .navbar .nav-btns{
+        display:block;
+    }
+    .btn{
+        border:0;
+        padding:0;
+        padding-bottom:10px;
+    }
+    .menu-links{
+        background-color: #f14d34;
+        position:absolute;
+        display: none;
+    }
+    .menu-links a{
+        border:0;
+    }
+    .menu-links a:hover {
+        background-color: rgb(192, 67, 13);
+    }
+    .drupal-main{
+        font-size:100%;
+    }
+    .drupal-main h1{
+        font-size: 48px;
+    }
+    .request,
+    .reviews {
+        flex-direction: row;
+    }
+    .reviews{
+    padding: 4rem;
+    }
+    .review-main {
+        padding: 14px 60px;
+        border-bottom: 0;
+        border-right: 1px solid #cdcdcd;
+        width: 62%;
+    }
+
+    .review-number {
+        width: 38%;
+    }
+    .rq-info-1 h3{
+        font-size:175%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #block0{
+        padding-top:45%;
+    }
+    .main{
+        width: 1300px;
+    }
+    .main-btn{
+        margin-left:0;
+        margin-right:0;
+    }
+    .drupal-main {
+        width: 400px;
+    }
+.container{
+    width: 1400px;
+}
+    .request,
+    .cop-info,
+    .faq {
+        width: 1200px;
+    }
+
+    .rq-info-1 {
+        padding-bottom: 130px;
+    }
+
+    footer {
+        background:
+            url("https://drupal-coder.ru/themes/custom/bootstrap_dc/images/D-flying.svg") no-repeat top center/250px,
+            url("https://drupal-coder.ru/themes/custom/bootstrap_dc/images/D-footer.svg") no-repeat bottom right/450px,
+            linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(30, 35, 57, 1) 100%);
+    }
+}
+
+@media (min-width:960px) {
+    .reviews {
+        width: 960px;
+    }
+
+}
+
+
 
 
 
@@ -1284,12 +1888,6 @@ h6 {
 
 .text-bold {
     font-weight: 1000;
-}
-
-@media (min-width: 1200px){
-.desktop-flex {
-        display: flex;
-    }
 }
 
 .mx-2 {
@@ -1343,6 +1941,13 @@ h6 {
 
 .color-gray {
     color: #a8acb5;
+}
+
+
+@media (min-width: 1200px){
+    .desktop-flex {
+            display: flex;
+        }
 }
 
 @media (max-width: 1200px){
@@ -1600,11 +2205,6 @@ h6 {
 
     #block6 {
         width: 100vw;
-    }
-
-    #block6 .header{
-        width: 90vw;
-        font-size: 28px;
     }
 
     #block6 .team-member img{
