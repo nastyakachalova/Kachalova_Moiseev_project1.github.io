@@ -2027,7 +2027,6 @@ h6 {
     .menu-links{
         background-color: #f14d34;
         position:absolute;
-        display: none;
     }
     .menu-links a{
         border:0;
