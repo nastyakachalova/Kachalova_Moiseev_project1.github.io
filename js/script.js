@@ -136,11 +136,12 @@ function faq12(){
 }
 
 function myFunction() {
-    var x = document.getElementById("nav-btns");
+    var x = document.getElementById("nav-btns")
+    ; $( ".nav-btns" ).slideToggle( "slow"); 
     if (x.classList.contains("closed")) {
-        x.classList.remove("closed");
+         x.classList.remove("closed");
     } else {
-      x.classList.add("closed");;
+            x.classList.add("closed");
     }
   }
 
@@ -157,7 +158,7 @@ document.getElementById("mainForm").addEventListener("submit", function(e){
   formData.append('E-Mail', email);
   formData.append('Message', subject);
   console.log(formData);
-  fetch('https://formcarry.com/s/Alp3NV0uq/json', {
+  fetch('https://formcarry.com/s/Alp3NV0uq', {
     method: 'POST',
     body: formData
   })
